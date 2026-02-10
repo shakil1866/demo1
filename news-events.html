@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | The Girls School</title>
+    <meta name="description"
+        content="Stay updated with the latest news, events, and achievements from The Girls School.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2d5a7b" />
+                        <stop offset="50%" style="stop-color:#4a90a4" />
+                        <stop offset="100%" style="stop-color:#7ec8c8" />
+                    </linearGradient>
+                </defs>
+                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
+                    stroke-width="2" />
+                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
+                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
+                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
+                    fill="url(#logoGradient)">EXCELLENCE</text>
+            </svg>
+            <div class="loader-progress"></div>
+            <p class="loader-text">Empowering Future Leaders</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 50 50" width="40" height="40">
+                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
+                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
+                </svg>
+                <span class="logo-text">The Girls School</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-icon">
+                    <svg class="hamburger" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <svg class="close-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" />
+                        <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item has-mega-menu">
+                    <a href="about.html" class="nav-link">
+                        About
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>About Us</h4>
+                                <ul>
+                                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                                    <li><a href="about.html#values">Our Values</a></li>
+                                    <li><a href="about.html#history">History & Timeline</a></li>
+                                    <li><a href="about.html#leadership">Leadership</a></li>
+                                    <li><a href="about.html#diversity">Diversity, Equity & SEL</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Community</h4>
+                                <ul>
+                                    <li><a href="about.html#faculty">Faculty & Staff</a></li>
+                                    <li><a href="about.html#governance">Governance</a></li>
+                                    <li><a href="about.html#accreditation">Accreditation</a></li>
+                                    <li><a href="about.html#careers">Careers</a></li>
+                                    <li><a href="about.html#campus">Campus Overview</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Building confident, compassionate leaders since 1952"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="programs.html" class="nav-link">
+                        Programs
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Academic Programs</h4>
+                                <ul>
+                                    <li><a href="programs.html#lower-school">Lower School (K-5)</a></li>
+                                    <li><a href="programs.html#middle-school">Middle School (6-8)</a></li>
+                                    <li><a href="programs.html#curriculum">Curriculum Overview</a></li>
+                                    <li><a href="programs.html#teaching">Teaching Approach</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Student Experience</h4>
+                                <ul>
+                                    <li><a href="programs.html#daily-life">Daily Life</a></li>
+                                    <li><a href="programs.html#extracurricular">Extracurricular Programs</a></li>
+                                    <li><a href="programs.html#after-school">After-School Programs</a></li>
+                                    <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Nurturing curiosity, building excellence"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="admissions.html" class="nav-link">
+                        Admissions
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Join Our Community</h4>
+                                <ul>
+                                    <li><a href="admissions.html#journey">Admissions Journey</a></li>
+                                    <li><a href="admissions.html#tuition">Tuition & Financial Aid</a></li>
+                                    <li><a href="admissions.html#open-house">Open House Events</a></li>
+                                    <li><a href="admissions.html#faq">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Next Steps</h4>
+                                <ul>
+                                    <li><a href="admissions.html#apply">Apply Now</a></li>
+                                    <li><a href="admissions.html#visit">Visit Campus</a></li>
+                                    <li><a href="admissions.html#after-graduation">Life After Graduation</a></li>
+                                    <li><a href="admissions.html#resources">Parent Resources</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Begin your journey with The Girls School"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="news-events.html" class="nav-link">News & Events</a>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="support.html" class="nav-link">
+                        Support
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Giving</h4>
+                                <ul>
+                                    <li><a href="support.html#impact">Impact Stories</a></li>
+                                    <li><a href="support.html#gratitude">Gratitude Reports</a></li>
+                                    <li><a href="support.html#options">Giving Options</a></li>
+                                    <li><a href="support.html#gala">Gala & Events</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Get Involved</h4>
+                                <ul>
+                                    <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
+                                    <li><a href="support.html#donate">Donate Now</a></li>
+                                    <li><a href="support.html#alumni">Alumni Network</a></li>
+                                    href="support.html <li>
+                                        <a#corporate">Corporate Partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Together, we empower the next generation"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-cta">
+                    <a href="admissions.html#apply" class="btn btn-primary">Apply Now</a>
+                </li>
+                <li class="nav-cta">
+                    <a href="contact.html#visit" class="btn btn-secondary">Visit Campus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-background"
+            style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);"></div>
+        <div class="container">
+            <div class="page-hero-content" data-animate="fade-up">
+                <span class="section-tag">Stay Connected</span>
+                <h1 class="page-title">News & Events</h1>
+                <p class="page-subtitle">The latest stories, achievements, and upcoming events from our vibrant
+                    community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Latest Stories</span>
+                <h2 class="section-title">Recent News</h2>
+            </div>
+
+            <div class="news-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="academics">Academics</button>
+                <button class="filter-btn" data-filter="athletics">Athletics</button>
+                <button class="filter-btn" data-filter="arts">Arts</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <div class="news-grid" data-animate="fade-up" data-stagger="100">
+                <article class="news-card-large" data-category="academics">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                     <img src="./images/academic.png" alt="" srcset="">
+                        </div>
+                        <span class="news-category">Academics</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">February 5, 2025</span>
+                        <h3>Students Excel in Regional Science Fair</h3>
+                        <p>Eight students earned top honors at the annual Regional Science Fair, showcasing innovative
+                            research projects in biology, chemistry, and physics.</p>
+                        <a href="#" class="news-link">Read Full Story</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="athletics">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                                                  <img src="./images/mini3.png" alt="" srcset="">
+
+                        </div>
+                        <span class="news-category">Athletics</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">February 3, 2025</span>
+                        <h3>Varsity Basketball Advances to Championships</h3>
+                        <p>After an undefeated season, our varsity basketball team heads to the state championships.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="arts">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                         <img src="./images/mini3.png" alt="" srcset="">
+                        </div>
+                        <span class="news-category">Arts</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">January 28, 2025</span>
+                        <h3>Spring Musical "Annie" Opens to Rave Reviews</h3>
+                        <p>The middle school production dazzled audiences with incredible talent and showmanship.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="community">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                                                    <img src="./images/mini3.png" alt="" srcset="">
+
+                        </div>
+                        <span class="news-category">Community</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">January 25, 2025</span>
+                        <h3>Annual Gala Raises Record $500K for Scholarships</h3>
+                        <p>Our community came together for an unforgettable evening celebrating education.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="events-calendar-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Save the Date</span>
+                <h2 class="section-title">Upcoming Events</h2>
+            </div>
+
+            <div class="events-calendar" data-animate="fade-up">
+                <div class="event-row">
+                    <div class="event-date">
+                        <span class="month">FEB</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Open House: Middle School</h3>
+                        <p>9:00 AM - 12:00 PM | Main Campus</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Register</a>
+                </div>
+
+                <div class="event-row">
+                    <div class="event-date">
+                        <span class="month">FEB</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>STEM Showcase 2025</h3>
+                        <p>6:00 PM - 8:00 PM | Science Center</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="event-row">
+                    <div class="event-date">
+                        <span class="month">MAR</span>
+                        <span class="day">5</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Parent-Teacher Conferences</h3>
+                        <p>Various Times | Virtual & In-Person</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Schedule</a>
+                </div>
+
+                <div class="event-row">
+                    <div class="event-date">
+                        <span class="month">MAR</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Lower School Open House</h3>
+                        <p>9:00 AM - 12:00 PM | Main Campus</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Register</a>
+                </div>
+
+                <div class="event-row">
+                    <div class="event-date">
+                        <span class="month">APR</span>
+                        <span class="day">10</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Spring Arts Festival</h3>
+                        <p>10:00 AM - 3:00 PM | Arts Wing</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <div class="calendar-cta" data-animate="fade-up">
+                <a href="#" class="btn btn-primary">View Full Calendar</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg viewBox="0 0 50 50" width="50" height="50">
+                            <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="2" />
+                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
+                                fill="currentColor" />
+                        </svg>
+                        <span>The Girls School</span>
+                    </a>
+                    <p>Empowering girls to lead, innovate, and inspire since 1952.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
+                                    fill="none" stroke="currentColor" stroke-width="2" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#history">Our History</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="about.html#careers">Careers</a></li>
+                        <li><a href="about.html#campus">Campus</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#lower-school">Lower School</a></li>
+                        <li><a href="programs.html#middle-school">Middle School</a></li>
+                        <li><a href="programs.html#curriculum">Curriculum</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="admissions.html#apply">Apply Now</a></li>
+                        <li><a href="admissions.html#visit">Visit Campus</a></li>
+                        <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#open-house">Open House</a></li>
+                        <li><a href="admissions.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                            1234 Excellence Way<br>City, State 12345
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="currentColor" />
+                            </svg>
+                            (555) 123-4567
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                    fill="currentColor" />
+                            </svg>
+                            info@excellencegirls.edu
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Non-Discrimination</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

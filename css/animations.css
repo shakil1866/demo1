@@ -1,0 +1,835 @@
+/* ========================================
+   Excellence Girls Academy - Animations
+   ======================================== */
+
+/* ========================================
+   Scroll Animations
+   ======================================== */
+
+/* Base animation classes */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+[data-animate="fade-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+[data-animate="fade-down"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+[data-animate="fade-left"] {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+[data-animate="fade-right"] {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+[data-animate="scale-in"] {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+[data-animate="blur-in"] {
+    opacity: 0;
+    filter: blur(10px);
+}
+
+/* Animated state */
+[data-animate].animated {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+    filter: blur(0);
+}
+
+/* Staggered animation for faculty-stat-card */
+.faculty-stat-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.faculty-stat-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation for culture-card */
+.culture-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.culture-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation durations */
+[data-animate].animated[data-duration="fast"] {
+    animation-duration: 0.3s;
+}
+
+[data-animate].animated[data-duration="base"] {
+    animation-duration: 0.5s;
+}
+
+[data-animate].animated[data-duration="slow"] {
+    animation-duration: 0.8s;
+}
+
+[data-animate].animated[data-duration="slower"] {
+    animation-duration: 1.2s;
+}
+
+/* Animation delays */
+[data-animate].animated[data-delay="100"] {
+    animation-delay: 0.1s;
+}
+
+[data-animate].animated[data-delay="200"] {
+    animation-delay: 0.2s;
+}
+
+[data-animate].animated[data-delay="300"] {
+    animation-delay: 0.3s;
+}
+
+[data-animate].animated[data-delay="400"] {
+    animation-delay: 0.4s;
+}
+
+[data-animate].animated[data-delay="500"] {
+    animation-delay: 0.5s;
+}
+
+[data-animate].animated[data-delay="600"] {
+    animation-delay: 0.6s;
+}
+
+[data-animate].animated[data-delay="700"] {
+    animation-delay: 0.7s;
+}
+
+[data-animate].animated[data-delay="800"] {
+    animation-delay: 0.8s;
+}
+
+/* ========================================
+   Keyframe Animations
+   ======================================== */
+
+/* Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Down */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Bounce */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Shake */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Spin */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Flip */
+@keyframes flip {
+    from {
+        transform: perspective(400px) rotateY(-180deg);
+    }
+
+    to {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+/* ========================================
+   Hover Effects
+   ======================================== */
+
+/* Lift Effect */
+.hover-lift {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Glow Effect */
+.hover-glow {
+    transition: box-shadow var(--transition-base);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(45, 90, 123, 0.3);
+}
+
+/* Scale Effect */
+.hover-scale {
+    transition: transform var(--transition-base);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Slide Effect */
+.hover-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left var(--transition-base);
+}
+
+.hover-slide:hover::after {
+    left: 100%;
+}
+
+/* Underline Animation */
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width var(--transition-base);
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   Micro-interactions
+   ======================================== */
+
+/* Button Press */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Link Hover Underline Expansion */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width var(--transition-base), left var(--transition-base);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+/* Icon Rotation on Hover */
+.nav-item:hover .nav-arrow {
+    transform: rotate(180deg);
+}
+
+/* Card Entrance Animation */
+.card-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card-enter.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading Skeleton */
+.skeleton {
+    background: linear-gradient(90deg, var(--gray-200) 25%, var(--gray-100) 50%, var(--gray-200) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ========================================
+   Parallax Effects
+   ======================================== */
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Smooth parallax for elements */
+.parallax-element {
+    will-change: transform;
+}
+
+/* ========================================
+   Glassmorphism
+   ======================================== */
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   Text Animations
+   ======================================== */
+
+/* Typewriter Effect */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid currentColor;
+    white-space: nowrap;
+    animation: typewriter 2s steps(20) 1s forwards, blink 0.7s step-end infinite;
+    width: 0;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+}
+
+/* Gradient Text Animation */
+.gradient-text-animate {
+    background: linear-gradient(-45deg, var(--primary), var(--primary-light), var(--primary-lighter), var(--accent));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ========================================
+   Reveal Animations
+   ======================================== */
+
+/* Line Reveal */
+.line-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.line-reveal::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    transform: translateX(-101%);
+    transition: transform var(--transition-slow);
+}
+
+.line-reveal:hover::after {
+    transform: translateX(0);
+}
+
+/* Image Reveal */
+.image-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    transform: translateY(101%);
+    transition: transform var(--transition-slow);
+}
+
+.image-reveal:hover::after {
+    transform: translateY(0);
+}
+
+/* ========================================
+   3D Card Effects
+   ======================================== */
+
+.card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform var(--transition-base);
+}
+
+.card-3d-content {
+    transform-style: preserve-3d;
+    transition: transform var(--transition-base);
+}
+
+.card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.card-3d:hover .card-3d-content {
+    transform: translateZ(20px);
+}
+
+/* Tilt Effect */
+.tilt-effect {
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease;
+}
+
+.tilt-effect:hover {
+    transform: perspective(1000px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg));
+}
+
+/* ========================================
+   Loading States
+   ======================================== */
+
+/* Spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--gray-200);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Dots Loading */
+.dots-loading {
+    display: flex;
+    gap: 6px;
+}
+
+.dots-loading span {
+    width: 10px;
+    height: 10px;
+    background: var(--gray-400);
+    border-radius: 50%;
+    animation: dotsBounce 1.4s ease-in-out infinite both;
+}
+
+.dots-loading span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.dots-loading span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes dotsBounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+/* ========================================
+   Page Transition Effects
+   ======================================== */
+
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* ========================================
+   Staggered Animations
+   ======================================== */
+
+.stagger-1>*:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stagger-1>*:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stagger-1>*:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stagger-1>*:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.stagger-1>*:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.stagger-1>*:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.stagger-2>*:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.stagger-2>*:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.stagger-2>*:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.stagger-2>*:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.stagger-2>*:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.stagger-2>*:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.stagger-2>*:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.stagger-2>*:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+/* ========================================
+   Success/Error Animations
+   ======================================== */
+
+.success-checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #10b981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.3s ease-out;
+}
+
+.success-checkmark svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.error-cross {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.3s ease-out;
+}
+
+.error-cross svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+/* ========================================
+   Focus Ring Animation
+   ======================================== */
+
+.focus-ring {
+    position: relative;
+}
+
+.focus-ring::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid var(--primary-light);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.focus-ring:focus::before {
+    opacity: 1;
+    animation: focusPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes focusPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+}
+
+/* ========================================
+   Floating Animation Variations
+   ======================================== */
+
+.float-1 {
+    animation: float 3s ease-in-out infinite;
+}
+
+.float-2 {
+    animation: float 4s ease-in-out infinite reverse;
+}
+
+.float-3 {
+    animation: float 5s ease-in-out infinite 0.5s;
+}
+
+/* ========================================
+   Selection Highlight
+   ======================================== */
+
+::selection {
+    background: var(--primary-light);
+    color: var(--white);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-300);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-400);
+}

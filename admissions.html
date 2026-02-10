@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | The Girls School</title>
+    <meta name="description"
+        content="Join our community! Learn about our admissions process, tuition, financial aid, and upcoming events.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/admissions.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2d5a7b" />
+                        <stop offset="50%" style="stop-color:#4a90a4" />
+                        <stop offset="100%" style="stop-color:#7ec8c8" />
+                    </linearGradient>
+                </defs>
+                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
+                    stroke-width="2" />
+                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
+                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
+                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
+                    fill="url(#logoGradient)">EXCELLENCE</text>
+            </svg>
+            <div class="loader-progress"></div>
+            <p class="loader-text">Empowering Future Leaders</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 50 50" width="40" height="40">
+                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
+                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
+                </svg>
+                <span class="logo-text">The Girls School</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-icon">
+                    <svg class="hamburger" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <svg class="close-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" />
+                        <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item has-mega-menu">
+                    <a href="about.html" class="nav-link">
+                        About
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>About Us</h4>
+                                <ul>
+                                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                                    <li><a href="about.html#values">Our Values</a></li>
+                                    <li><a href="about.html#history">History & Timeline</a></li>
+                                    <li><a href="about.html#leadership">Leadership</a></li>
+                                    <li><a href="about.html#diversity">Diversity, Equity & SEL</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Community</h4>
+                                <ul>
+                                    <li><a href="about.html#faculty">Faculty & Staff</a></li>
+                                    <li><a href="about.html#governance">Governance</a></li>
+                                    <li><a href="about.html#accreditation">Accreditation</a></li>
+                                    <li><a href="about.html#careers">Careers</a></li>
+                                    <li><a href="about.html#campus">Campus Overview</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Building confident, compassionate leaders since 1952"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="programs.html" class="nav-link">
+                        Programs
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Academic Programs</h4>
+                                <ul>
+                                    <li><a href="programs.html#lower-school">Lower School (K-5)</a></li>
+                                    <li><a href="programs.html#middle-school">Middle School (6-8)</a></li>
+                                    <li><a href="programs.html#curriculum">Curriculum Overview</a></li>
+                                    <li><a href="programs.html#teaching">Teaching Approach</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Student Experience</h4>
+                                <ul>
+                                    <li><a href="programs.html#daily-life">Daily Life</a></li>
+                                    <li><a href="programs.html#extracurricular">Extracurricular Programs</a></li>
+                                    <li><a href="programs.html#after-school">After-School Programs</a></li>
+                                    <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Nurturing curiosity, building excellence"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="admissions.html" class="nav-link active">
+                        Admissions
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Join Our Community</h4>
+                                <ul>
+                                    <li><a href="admissions.html#journey">Admissions Journey</a></li>
+                                    <li><a href="admissions.html#tuition">Tuition & Financial Aid</a></li>
+                                    <li><a href="admissions.html#open-house">Open House Events</a></li>
+                                    <li><a href="admissions.html#faq">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Next Steps</h4>
+                                <ul>
+                                    <li><a href="admissions.html#apply">Apply Now</a></li>
+                                    <li><a href="admissions.html#visit">Visit Campus</a></li>
+                                    <li><a href="admissions.html#after-graduation">Life After Graduation</a></li>
+                                    <li><a href="admissions.html#resources">Parent Resources</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Begin your journey with The Girls School"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="news-events.html" class="nav-link">News & Events</a>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="support.html" class="nav-link">
+                        Support
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Giving</h4>
+                                <ul>
+                                    <li><a href="support.html#impact">Impact Stories</a></li>
+                                    <li><a href="support.html#gratitude">Gratitude Reports</a></li>
+                                    <li><a href="support.html#options">Giving Options</a></li>
+                                    <li><a href="support.html#gala">Gala & Events</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Get Involved</h4>
+                                <ul>
+                                    <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
+                                    <li><a href="support.html#donate">Donate Now</a></li>
+                                    <li><a href="support.html#alumni">Alumni Network</a></li>
+                                    href="support.html <li>
+                                        <a#corporate">Corporate Partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Together, we empower the next generation"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-cta">
+                    <a href="admissions.html#apply" class="btn btn-primary">Apply Now</a>
+                </li>
+                <li class="nav-cta">
+                    <a href="contact.html#visit" class="btn btn-secondary">Visit Campus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Intro Section -->
+    <section class="intro-section">
+        <div class="intro-background"></div>
+        <div class="container">
+            <div class="intro-content" data-animate="fade-up" data-duration="600">
+                <h1 class="intro-headline" style="">Our admissions</h1>
+                <p class="intro-subtext" data-animate="fade-up" data-delay="200">
+                    Welcome to a community where every girl discovers her voice, embraces her strengths, and becomes the
+                    leader she was meant to be. Your journey to The Girls' School starts here.
+                </p>
+                <div class="intro-cta-group" data-animate="fade-up" data-delay="400">
+                    <a href="#inquiry" class="btn btn-primary btn-large">Request Information</a>
+                    <a href="#visit" class="btn btn-outline-white btn-large">Schedule a Visit</a>
+                </div>
+                <div class="intro-stats" data-animate="fade-up" data-delay="600">
+                    <div class="intro-stat">
+                        <span class="stat-number">70+</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="intro-stat">
+                        <span class="stat-number">450+</span>
+                        <span class="stat-label">Students K-8</span>
+                    </div>
+                    <div class="intro-stat">
+                        <span class="stat-number">12:1</span>
+                        <span class="stat-label">Student-Teacher Ratio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-scroll-indicator" data-animate="fade-up" data-delay="800">
+            <span>Scroll to explore</span>
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M7 10l5 5 5-5z" fill="currentColor" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Why Choose The Girls' School -->
+    <section class="why-choose-section" id="why-choose">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Difference</span>
+                <h2 class="section-title">Why Choose The Girls' School</h2>
+                <p class="section-subtitle">An education designed specifically for girls creates opportunities that last
+                    a lifetime</p>
+            </div>
+
+            <div class="why-choose-grid">
+                <div class="why-choose-card" data-animate="fade-up" data-stagger="150">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <circle cx="24" cy="24" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
+                            <path d="M24 12c6.627 0 12 5.373 12 12s-5.373 12-12 12S12 30.627 12 24" fill="none"
+                                stroke="#2d5a7b" stroke-width="2" />
+                            <circle cx="24" cy="24" r="6" fill="#2d5a7b" />
+                        </svg>
+                    </div>
+                    <h3>Unparalleled Confidence</h3>
+                    <p>Research shows girls in single-sex environments take more academic risks, participate more in
+                        class, and develop stronger self-esteem. Without gender stereotypes holding them back, our
+                        students embrace every challenge.</p>
+                    <ul class="card-benefits">
+                        <li>Risk-taking encouraged & celebrated</li>
+                        <li>Leadership opportunities abound</li>
+                        <li>STEM subjects embraced with enthusiasm</li>
+                    </ul>
+                </div>
+
+                <div class="why-choose-card" data-animate="fade-up" data-stagger="150" data-delay="100">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <rect x="8" y="8" width="32" height="32" rx="4" fill="none" stroke="#4a90a4"
+                                stroke-width="2" />
+                            <path d="M8 16h32M16 24h16M16 32h8" stroke="#4a90a4" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Our rigorous curriculum is paired with personalized attention that brings out each girl's best.
+                        Small class sizes ensure no student falls through the cracks and every potential is nurtured.
+                    </p>
+                    <ul class="card-benefits">
+                        <li>12:1 student-teacher ratio</li>
+                        <li>Personalized learning plans</li>
+                        <li>Above-average standardized scores</li>
+                    </ul>
+                </div>
+
+                <div class="why-choose-card" data-animate="fade-up" data-stagger="150" data-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <polygon points="24,4 30,18 46,18 34,28 38,44 24,34 10,44 14,28 2,18 18,18" fill="none"
+                                stroke="#7ec8c8" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Leadership Development</h3>
+                    <p>Every leadership position is available to our students. From student council to club presidents,
+                        from team captains to debate leaders, girls step into roles that shape their character and
+                        future.</p>
+                    <ul class="card-benefits">
+                        <li>100% student council participation</li>
+                        <li>No competition from boys' leadership</li>
+                        <li>Mentorship from upperclassmen</li>
+                    </ul>
+                </div>
+
+                <div class="why-choose-card" data-animate="fade-up" data-stagger="150" data-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <circle cx="24" cy="16" r="8" fill="none" stroke="#e8a87c" stroke-width="2" />
+                            <path d="M8 44c0-8.837 7.163-16 16-16s16 7.163 16 16" fill="none" stroke="#e8a87c"
+                                stroke-width="2" />
+                            <circle cx="16" cy="28" r="4" fill="#e8a87c" />
+                            <circle cx="32" cy="28" r="4" fill="#e8a87c" />
+                        </svg>
+                    </div>
+                    <h3>Supportive Community</h3>
+                    <p>Our girls form lasting friendships and supportive networks that extend beyond graduation. The
+                        collaborative spirit at our school creates an environment where everyone lifts each other up.
+                    </p>
+                    <ul class="card-benefits">
+                        <li>Lifelong friendships formed</li>
+                        <li>Cross-grade mentorship programs</li>
+                        <li>Parent community involvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Philosophy -->
+    <section class="philosophy-section" id="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-text" data-animate="fade-right">
+                    <span class="section-tag">Our Approach</span>
+                    <h2 class="section-title">Admissions Philosophy</h2>
+                    <p class="philosophy-lead">We're looking for the right fit, not the perfect applicant.</p>
+                    <p>At The Girls' School, we believe every child has unique gifts to share. Our holistic admissions
+                        process is designed to understand your daughter as a whole person—her curiosity, her character,
+                        her potential, and her dreams.</p>
+                    <p>We evaluate students based on their developmental readiness, enthusiasm for learning, and
+                        alignment with our values. We consider how families will contribute to our community and how our
+                        school will support each child's journey.</p>
+                    <div class="philosophy-values">
+                        <div class="value-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#2d5a7b" />
+                            </svg>
+                            <span>Whole child approach</span>
+                        </div>
+                        <div class="value-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#2d5a7b" />
+                            </svg>
+                            <span>Growth mindset focus</span>
+                        </div>
+                        <div class="value-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#2d5a7b" />
+                            </svg>
+                            <span>Family partnership</span>
+                        </div>
+                        <div class="value-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#2d5a7b" />
+                            </svg>
+                            <span>Diverse pathways welcome</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-visual" data-animate="fade-left">
+                    <div class="philosophy-card">
+                        <h4>What We Look For</h4>
+                        <div class="philosophy-list">
+                            <div class="philosophy-item">
+                                <span class="item-number">01</span>
+                                <div class="item-content">
+                                    <strong>Curiosity & Enthusiasm</strong>
+                                    <p>A natural love of learning and questions</p>
+                                </div>
+                            </div>
+                            <div class="philosophy-item">
+                                <span class="item-number">02</span>
+                                <div class="item-content">
+                                    <strong>Social-Emotional Readiness</strong>
+                                    <p>Ability to collaborate and build relationships</p>
+                                </div>
+                            </div>
+                            <div class="philosophy-item">
+                                <span class="item-number">03</span>
+                                <div class="item-content">
+                                    <strong>Growth Potential</strong>
+                                    <p>Effort, resilience, and desire to improve</p>
+                                </div>
+                            </div>
+                            <div class="philosophy-item">
+                                <span class="item-number">04</span>
+                                <div class="item-content">
+                                    <strong>Family Engagement</strong>
+                                    <p>Alignment with our values and community</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Process Section -->
+    <section class="process-section" id="journey">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Your Journey</span>
+                <h2 class="section-title">Admissions Process</h2>
+                <p class="section-subtitle">Our step-by-step journey is designed to get to know your family and help you
+                    experience our community firsthand</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-animate="fade-up" data-stagger="200">
+                    <div class="step-marker">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">Step 1</span>
+                        <h3>Inquiry</h3>
+                        <p>Submit our online inquiry form to receive information about the school, upcoming events, and
+                            admissions updates.</p>
+                        <ul class="step-details">
+                            <li>Online form takes 5-10 minutes</li>
+                            <li>Receive welcome packet within 48 hours</li>
+                            <li>Added to our admissions newsletter</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate="fade-up" data-stagger="200" data-delay="100">
+                    <div class="step-marker">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">Step 2</span>
+                        <h3>Visit Campus</h3>
+                        <p>Schedule a personalized tour to experience our classrooms, facilities, and community
+                            atmosphere.</p>
+                        <ul class="step-details">
+                            <li>Tours available Tuesday-Friday</li>
+                            <li>Meet with admissions team</li>
+                            <li>Observe classes in session</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate="fade-up" data-stagger="200" data-delay="200">
+                    <div class="step-marker">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">Step 3</span>
+                        <h3>Student Assessment</h3>
+                        <p>Your daughter participates in an age-appropriate assessment and classroom visit.</p>
+                        <ul class="step-details">
+                            <li>Low-pressure, activity-based</li>
+                            <li>Teachers observe readiness</li>
+                            <li>Half-day experience included</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate="fade-up" data-stagger="200" data-delay="300">
+                    <div class="step-marker">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">Step 4</span>
+                        <h3>Application</h3>
+                        <p>Complete the application form and submit required documents.</p>
+                        <ul class="step-details">
+                            <li>Application fee: $75</li>
+                            <li>Teacher recommendation forms</li>
+                            <li>Previous school records</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate="fade-up" data-stagger="200" data-delay="400">
+                    <div class="step-marker">
+                        <div class="step-icon final">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">Step 5</span>
+                        <h3>Decision</h3>
+                        <p>Receive your admissions decision within two weeks of completing the process.</p>
+                        <ul class="step-details">
+                            <li>Written notification via email</li>
+                            <li>Acceptance packet with next steps</li>
+                            <li>Enrollment deadline: March 15</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-cta" data-animate="fade-up">
+                <div class="cta-content">
+                    <h4>Ready to Begin?</h4>
+                    <p>The priority deadline is January 15th. We encourage early applications as spaces fill quickly.
+                    </p>
+                </div>
+                <a href="#inquiry" class="btn btn-primary">Start Your Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tuition & Financial Aid -->
+    <section class="tuition-section" id="tuition">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Investment</span>
+                <h2 class="section-title">Tuition & Financial Aid</h2>
+                <p class="section-subtitle">We believe financial circumstances should never prevent a qualified student
+                    from joining our community</p>
+            </div>
+
+            <div class="tuition-grid">
+                <div class="tuition-panel" data-animate="fade-up">
+                    <div class="panel-header">
+                        <h3>2025-2026 Tuition</h3>
+                        <p>Tuition includes all academic materials, textbooks, most extracurricular activities, and
+                            daily hot lunch.</p>
+                    </div>
+                    <div class="tuition-cards">
+                        <div class="tuition-card">
+                            <div class="tuition-level">
+                                <span class="level-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span class="level-name">Lower School</span>
+                                <span class="level-grades">K - 5th Grade</span>
+                            </div>
+                            <div class="tuition-price">$24,500</div>
+                        </div>
+                        <div class="tuition-card">
+                            <div class="tuition-level">
+                                <span class="level-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z" fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span class="level-name">Middle School</span>
+                                <span class="level-grades">6th - 8th Grade</span>
+                            </div>
+                            <div class="tuition-price">$26,800</div>
+                        </div>
+                    </div>
+                    <div class="tuition-note">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#2d5a7b" />
+                        </svg>
+                        <span>Additional fees may apply for before/after care and optional programs</span>
+                    </div>
+                </div>
+
+                <div class="financial-aid-panel" data-animate="fade-up" data-delay="200">
+                    <div class="aid-header">
+                        <h3>Financial Aid</h3>
+                        <p>We're committed to making our education accessible to qualified students from diverse
+                            backgrounds.</p>
+                    </div>
+                    <div class="aid-stats">
+                        <div class="aid-stat" data-animate="fade-up" data-delay="300">
+                            <div class="stat-value" data-count="28">0%</div>
+                            <div class="stat-label">of students receive aid</div>
+                        </div>
+                        <div class="aid-stat" data-animate="fade-up" data-delay="400">
+                            <div class="stat-value" data-count="2100000">$0</div>
+                            <div class="stat-label">in aid awarded annually</div>
+                        </div>
+                    </div>
+                    <div class="aid-details">
+                        <h4>Aid Considerations</h4>
+                        <ul>
+                            <li>Awarded based on financial need</li>
+                            <li>Available to families of all backgrounds</li>
+                            <li>Confidential and non-judgmental process</li>
+                            <li>Reapply annually if circumstances change</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-full">Learn About Financial Aid</a>
+                </div>
+
+                <div class="payment-options-panel" data-animate="fade-up" data-delay="400">
+                    <h3>Payment Options</h3>
+                    <div class="payment-options">
+                        <div class="option">
+                            <span class="option-name">Annual</span>
+                            <span class="option-discount">2% discount</span>
+                            <span class="option-amount">Due August 1</span>
+                        </div>
+                        <div class="option">
+                            <span class="option-name">Semi-Annual</span>
+                            <span class="option-amount">Due August & January</span>
+                        </div>
+                        <div class="option">
+                            <span class="option-name">Monthly</span>
+                            <span class="option-amount">10 monthly payments</span>
+                        </div>
+                    </div>
+                    <div class="payment-note">
+                        <p>Tuition insurance and payment plans available through FACTS Tuition Management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Open Houses -->
+    <section class="visit-section" id="visit">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Experience Us</span>
+                <h2 class="section-title">Visit & Open Houses</h2>
+                <p class="section-subtitle">There's no substitute for experiencing our community firsthand. We look
+                    forward to welcoming you to campus.</p>
+            </div>
+
+            <div class="visit-options">
+                <div class="visit-card" data-animate="fade-up">
+                    <div class="visit-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                fill="#2d5a7b" />
+                        </svg>
+                    </div>
+                    <h3>Personal Tours</h3>
+                    <p>Schedule a one-on-one tour with our admissions team. See classrooms, meet teachers, and get your
+                        questions answered.</p>
+                    <ul class="visit-details">
+                        <li>Available Tuesday-Friday</li>
+                        <li>45-60 minutes</li>
+                        <li>All grade levels welcome</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-full">Schedule Tour</a>
+                </div>
+
+                <div class="visit-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="visit-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path
+                                d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"
+                                fill="#e8a87c" />
+                        </svg>
+                    </div>
+                    <h3>Open House Events</h3>
+                    <p>Join us for our signature open house events. Meet current families, observe classes, and
+                        experience our community energy.</p>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month">MAR</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-info">
+                                <strong>Lower School Open House</strong>
+                                <span>9:00 AM - 12:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month">MAR</span>
+                                <span class="day">22</span>
+                            </div>
+                            <div class="event-info">
+                                <strong>Middle School Open House</strong>
+                                <span>9:00 AM - 12:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month">APR</span>
+                                <span class="day">5</span>
+                            </div>
+                            <div class="event-info">
+                                <strong>Spring Showcase</strong>
+                                <span>10:00 AM - 2:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-full">Register for Open House</a>
+                </div>
+
+                <div class="visit-card" data-animate="fade-up" data-delay="200">
+                    <div class="visit-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path
+                                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"
+                                fill="#4a90a4" />
+                        </svg>
+                    </div>
+                    <h3>Virtual Options</h3>
+                    <p>Can't visit in person? Join us for a virtual information session and live Q&A with our admissions
+                        team.</p>
+                    <ul class="visit-details">
+                        <li>Live video presentations</li>
+                        <li>Virtual campus tour</li>
+                        <li>Real-time Q&A sessions</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-full">View Virtual Options</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life After Graduation -->
+    <section class="graduation-section" id="after-graduation">
+        <div class="container">
+            <div class="graduation-content">
+                <div class="graduation-text" data-animate="fade-right">
+                    <span class="section-tag">Future Ready</span>
+                    <h2 class="section-title">Life After Graduation</h2>
+                    <p class="section-lead">Our graduates are prepared, confident, and ready to thrive in top high
+                        schools and beyond.</p>
+                    <p>Every aspect of our program is designed to prepare students for the next stage of their
+                        educational journey. From rigorous academics to leadership development, our girls graduate with
+                        the skills, confidence, and character to succeed.</p>
+
+                    <div class="graduation-metrics">
+                        <div class="metric">
+                            <span class="metric-number">95%</span>
+                            <span class="metric-label">Accepted to top-choice high schools</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">100%</span>
+                            <span class="metric-label">College-preparatory curriculum</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">50+</span>
+                            <span class="metric-label">Leadership positions held annually</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="graduation-stories" data-animate="fade-left">
+                    <div class="story-card">
+                        <div class="story-quote">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="#7ec8c8" />
+                            </svg>
+                            <p>"The Girls' School gave me the confidence to pursue leadership roles and excel in STEM.
+                                I'm now thriving at my first-choice boarding school."</p>
+                        </div>
+                        <div class="story-author">
+                            <div class="author-avatar">EM</div>
+                            <div class="author-info">
+                                <strong>Emma M.</strong>
+                                <span>Class of 2023, Now at Phillips Exeter Academy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-quote">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="#7ec8c8" />
+                            </svg>
+                            <p>"My daughter went from shy to student council president in just two years. The
+                                environment here is truly transformative."</p>
+                        </div>
+                        <div class="story-author">
+                            <div class="author-avatar">SL</div>
+                            <div class="author-info">
+                                <strong>Sarah L.</strong>
+                                <span>Parent of Class of 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about admissions at The Girls' School</p>
+            </div>
+
+            <div class="faq-container" data-animate="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">What grades do you accept?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept students from Kindergarten through 8th grade. Each grade level has limited spots
+                            available, and we maintain small class sizes to ensure personalized attention for every
+                            student.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">Is financial aid available?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! 28% of our students receive some form of financial aid. We encourage all families to
+                            apply regardless of income level. Aid is awarded based on financial need and is completely
+                            confidential.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">What is the application deadline?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our priority deadline is January 15th. Applications received after this date will be
+                            considered based on availability. We recommend applying early as spaces fill quickly,
+                            especially in younger grades.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">Do you offer before/after school care?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer extended day programs from 7:00 AM - 6:00 PM for an additional fee. Our
+                            extended day includes homework help, enrichment activities, and supervised play. Drop-in
+                            care is also available for registered families.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">What is the class size?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our average class size is 16 students with a 12:1 student-teacher ratio. This allows teachers
+                            to know each student personally and tailor instruction to individual needs and learning
+                            styles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <span class="faq-text">What extracurricular activities are available?</span>
+                        <svg class="faq-arrow" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a wide range of extracurriculars including robotics, debate, drama, visual arts,
+                            music, dance, athletics, and numerous clubs. Most activities are included in tuition, with
+                            select competitive programs requiring additional fees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-more" data-animate="fade-up">
+                <p>Still have questions?</p>
+                <a href="contact.html" class="btn btn-outline">Contact Admissions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply CTA Section -->
+    <section class="apply-section" id="apply">
+        <div class="apply-background"></div>
+        <div class="container">
+            <div class="apply-content" data-animate="scale-in">
+                <span class="apply-tag">Begin Your Journey</span>
+                <h2 class="apply-title">Ready to Apply?</h2>
+                <p class="apply-subtitle">Join our community of confident, compassionate leaders. Applications for the
+                    2025-2026 school year are now open.</p>
+                <div class="apply-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <span>Start Application</span>
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-white btn-large">Contact Admissions</a>
+                </div>
+                <div class="apply-deadline">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path
+                            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"
+                            fill="currentColor" />
+                    </svg>
+                    <span>Priority Deadline: January 15, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg viewBox="0 0 50 50" width="40" height="40">
+                            <circle cx="25" cy="25" r="22" fill="none" stroke="#ffffff" stroke-width="2" />
+                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
+                                fill="#ffffff" />
+                        </svg>
+                        <span>The Girls School</span>
+                    </a>
+                    <p>A Private School for Girls K-8 since 1952.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="about.html#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="programs.html#lower-school">Lower School (K-5)</a></li>
+                        <li><a href="programs.html#middle-school">Middle School (6-8)</a></li>
+                        <li><a href="programs.html#daily-life">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h4>Contact</h4>
+                    <p>(555) 123-4567</p>
+                    <p>admissions@excellencegirls.edu</p>
+                    <p>123 Education Lane<br>Excellence, ST 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

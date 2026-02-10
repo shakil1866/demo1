@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Girls School</title>
+    <meta name="description"
+        content="Discover The Girls School's 70+ year legacy of empowering young women through exceptional education. Learn about our mission, values, and the transformative experience we offer.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+    <!-- Animated Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2d5a7b" />
+                        <stop offset="50%" style="stop-color:#4a90a4" />
+                        <stop offset="100%" style="stop-color:#7ec8c8" />
+                    </linearGradient>
+                </defs>
+                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
+                    stroke-width="2" />
+                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
+                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
+                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
+                    fill="url(#logoGradient)">EXCELLENCE</text>
+            </svg>
+            <div class="loader-progress"></div>
+            <p class="loader-text">Empowering Future Leaders</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 50 50" width="40" height="40">
+                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
+                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
+                </svg>
+                <span class="logo-text">The Girls School</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-icon">
+                    <svg class="hamburger" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+                        <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <svg class="close-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" />
+                        <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item has-mega-menu">
+                    <a href="about.html" class="nav-link">
+                        About
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>About Us</h4>
+                                <ul>
+                                    <li><a href="about.html#who-we-are">Who We Are</a></li>
+                                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                                    <li><a href="about.html#why-girls">Why a Girls' School</a></li>
+                                    <li><a href="about.html#history">History & Timeline</a></li>
+                                    <li><a href="about.html#diversity">Diversity, Equity & SEL</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Community</h4>
+                                <ul>
+                                    <li><a href="about.html#faculty">Faculty & Staff</a></li>
+                                    <li><a href="about.html#campus">Campus & Culture</a></li>
+                                    <li><a href="about.html#leadership">Leadership</a></li>
+                                    <li><a href="about.html#governance">Governance</a></li>
+                                    <li><a href="about.html#careers">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Building confident, compassionate leaders since 1952"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="programs.html" class="nav-link">
+                        Programs
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Academic Programs</h4>
+                                <ul>
+                                    <li><a href="programs.html#lower-school">Lower School (K-5)</a></li>
+                                    <li><a href="programs.html#middle-school">Middle School (6-8)</a></li>
+                                    <li><a href="programs.html#curriculum">Curriculum Overview</a></li>
+                                    <li><a href="programs.html#teaching">Teaching Approach</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Student Experience</h4>
+                                <ul>
+                                    <li><a href="programs.html#daily-life">Daily Life</a></li>
+                                    <li><a href="programs.html#extracurricular">Extracurricular Programs</a></li>
+                                    <li><a href="programs.html#after-school">After-School Programs</a></li>
+                                    <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Nurturing curiosity, building excellence"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="admissions.html" class="nav-link">
+                        Admissions
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Join Our Community</h4>
+                                <ul>
+                                    <li><a href="admissions.html#journey">Admissions Journey</a></li>
+                                    <li><a href="admissions.html#tuition">Tuition & Financial Aid</a></li>
+                                    <li><a href="admissions.html#open-house">Open House Events</a></li>
+                                    <li><a href="admissions.html#faq">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Next Steps</h4>
+                                <ul>
+                                    <li><a href="admissions.html#apply">Apply Now</a></li>
+                                    <li><a href="admissions.html#visit">Visit Campus</a></li>
+                                    <li><a href="admissions.html#after-graduation">Life After Graduation</a></li>
+                                    <li><a href="admissions.html#resources">Parent Resources</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Begin your journey with The Girls School"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="news-events.html" class="nav-link">News & Events</a>
+                </li>
+
+                <li class="nav-item has-mega-menu">
+                    <a href="support.html" class="nav-link">
+                        Support
+                        <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-menu-column">
+                                <h4>Giving</h4>
+                                <ul>
+                                    <li><a href="support.html#impact">Impact Stories</a></li>
+                                    <li><a href="support.html#gratitude">Gratitude Reports</a></li>
+                                    <li><a href="support.html#options">Giving Options</a></li>
+                                    <li><a href="support.html#gala">Gala & Events</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Get Involved</h4>
+                                <ul>
+                                    <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
+                                    <li><a href="support.html#donate">Donate Now</a></li>
+                                    <li><a href="support.html#alumni">Alumni Network</a></li>
+                                    <li><a href="support.html#corporate">Corporate Partners</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column mega-menu-visual">
+                                <div class="menu-visual">
+                                    <p>"Together, we empower the next generation"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-cta">
+                    <a href="admissions.html#apply" class="btn btn-primary">Apply Now</a>
+                </li>
+                <li class="nav-cta">
+                    <a href="contact.html#visit" class="btn btn-secondary">Visit Campus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="about-hero" id="about-hero">
+        <!-- Hero Background with Gradient -->
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="hero-decor hero-decor-1">
+            <svg viewBox="0 0 100 100" width="200" height="200">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+                <circle cx="50" cy="50" r="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="hero-decor hero-decor-2">
+            <svg viewBox="0 0 100 100" width="150" height="150">
+                <polygon points="50,10 61,35 88,35 66,50 75,75 50,60 25,75 34,50 12,35 39,35" fill="none"
+                    stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Section Tag -->
+                <!-- <span class="hero-tag" data-animate="fade-up" data-delay="100">
+                    <span class="tag-line"></span>
+                    Welcome to The Girls School
+                </span> -->
+
+                <!-- Main Title -->
+                <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+                    <span class="title-line">Where Girls Empower</span>
+                  
+                </h1>
+
+                <!-- Intro Text -->
+                <p class="hero-intro" data-animate="fade-up" data-delay="400">
+                    For over seven decades, we have been dedicated to providing an exceptional educational experience
+                    that empowers young women to discover their unique potential, develop their intellectual curiosity,
+                    and cultivate the confidence to lead with integrity and compassion.
+                </p>
+
+                <!-- Animated Statistics -->
+             
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta" data-animate="fade-up" data-delay="1000">
+                    <a href="admissions.html#apply" class="btn btn-primary btn-large">Apply Now</a>
+                    <a href="contact.html#visit" class="btn btn-outline-white btn-large">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="1200">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to Discover</span>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are" id="who-we-are">
+        <div class="container">
+            <div class="who-we-are-grid">
+                <div class="who-we-are-content">
+                    <span class="section-tag">Our Identity</span>
+                    <h2 class="section-title">Who We Are</h2>
+                    <div class="content-block">
+                        <p class="lead-text">
+                            The Girls School is more than an educational institution—it is a community dedicated to
+                            nurturing the potential of young women and preparing them to be confident, compassionate
+                            leaders in an ever-changing world.
+                        </p>
+                        <p>
+                            Founded in 1952 by Dr. Margaret Excellence, our school began with a simple yet powerful
+                            vision: to create a learning environment where girls could explore their interests freely,
+                            challenge themselves intellectually, and develop the self-confidence to pursue their dreams
+                            without limitation.
+                        </p>
+                        <p>
+                            Today, that vision has grown into a thriving community of approximately 700 students from
+                            diverse backgrounds, all united by a shared commitment to academic excellence, personal
+                            growth, and service to others. Our alumnae network of over 5,000 women spans the globe,
+                            making meaningful contributions in fields ranging from science and technology to arts,
+                            humanities, and public service.
+                        </p>
+                    </div>
+                    <div class="identity-pillars" data-animate="fade-up" data-delay="200" data-stagger="150">
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Excellence in Education</h4>
+                            <p>Rigorous academics that challenge and inspire</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                                        fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Empowered Leadership</h4>
+                            <p>Confidence to lead with integrity and vision</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                                        fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Compassionate Community</h4>
+                            <p>Supportive relationships that foster growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="who-we-are-visual" data-animate="fade-left" data-delay="200">
+                    <div class="visual-card main-visual">
+                        <div class="visual-placeholder">
+                           <img src="./images/mini2.png" alt="" srcset="">
+                        </div>
+                        <div class="floating-badge" data-animate="scale-in" data-delay="800">
+                            <span class="badge-number">72</span>
+                            <span class="badge-text">Years of<br>Empowerment</span>
+                        </div>
+                    </div>
+                    <div class="visual-accent accent-1"></div>
+                    <div class="visual-accent accent-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision-section" id="mission">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Purpose</span>
+                <h2 class="section-title">Mission & Vision</h2>
+                <p class="section-subtitle">These statements guide every decision, interaction, and experience at The
+                    Girls School,
+                    ensuring we remain true to our core purpose of empowering young women.</p>
+            </div>
+
+            <div class="mv-cards">
+                <div class="mv-card-large" data-animate="fade-up" data-delay="100">
+               
+                    <div class="mv-card-content">
+                        <span class="mv-label">Our Mission</span>
+                        <h3>Empowering Girls to Lead, Innovate & Inspire</h3>
+                        <p>
+                            To provide an exceptional educational experience that empowers girls to discover their
+                            unique
+                            potential, develop their intellectual curiosity, and cultivate the confidence to lead with
+                            integrity and compassion. We are committed to fostering a community where every student
+                            feels valued, supported, and challenged to reach her highest potential.
+                        </p>
+                        <div class="mv-card-features">
+                            <div class="feature">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <span>Rigorous academic challenge</span>
+                            </div>
+                            <div class="feature">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <span>Supportive mentorship</span>
+                            </div>
+                            <div class="feature">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                                <span>Leadership development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mv-card-large" data-animate="fade-up" data-delay="300">
+                  
+                    <div class="mv-card-content">
+                        <span class="mv-label">Our Vision</span>
+                        <h3>A World Where Every Girl Can Pursue Her Dreams</h3>
+                        <p>
+                            We envision a world where every girl has the opportunity to pursue her dreams without
+                            limitation, where our graduates are catalysts for positive change in their communities
+                            and beyond. Through our work, we aim to inspire a new generation of confident, compassionate
+                            women who will shape a brighter future for all.
+                        </p>
+                        <div class="vision-outlook">
+                            <div class="outlook-item">
+                                <h4>Global Impact</h4>
+                                <p>Our graduates lead with confidence in every corner of the world</p>
+                            </div>
+                            <div class="outlook-item">
+                                <h4>Lasting Change</h4>
+                                <p>Alumnae create meaningful change in their communities</p>
+                            </div>
+                            <div class="outlook-item">
+                                <h4>Endless Possibilities</h4>
+                                <p>No dream is too big, no goal out of reach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why a Girls' School -->
+    <section class="why-girls-school" id="why-girls">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Girls' School Advantage</span>
+                <h2 class="section-title">Why Choose a Girls' School?</h2>
+                <p class="section-subtitle">Research consistently shows that girls' school graduates are more likely to
+                    succeed academically, professionally, and personally. Here's what sets The Girls School apart.</p>
+            </div>
+
+            <div class="why-content-grid">
+                <div class="why-main-content">
+                    <div class="story-block">
+                        <h3>The Research Speaks</h3>
+                        <p>
+                            Decades of research from institutions like the National Coalition of Girls' Schools confirms
+                            what we've known all along: girls thrive in single-gender learning environments. Our
+                            students
+                            consistently demonstrate higher academic achievement, greater self-confidence, and stronger
+                            leadership skills than their peers in coeducational settings.
+                        </p>
+                        <p>
+                            At The Girls School, every classroom discussion, every leadership opportunity, and every
+                            challenge is designed specifically with your daughter in mind. There are no distractions,
+                            no stereotypes limiting what she can achieve, and no social pressures holding her back from
+                            speaking up, taking risks, or pursuing her passions.
+                        </p>
+                    </div>
+
+                    <div class="benefits-accordion">
+                        <div class="accordion-item" data-animate="fade-up">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>Academic Achievement & Confidence</span>
+                                <svg class="accordion-arrow" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    Our students consistently outperform their peers on standardized assessments and
+                                    report
+                                    higher levels of academic confidence. In our classrooms, girls are encouraged to
+                                    speak up,
+                                    ask questions, and engage in healthy debate without the social anxieties often
+                                    present
+                                    in coeducational settings. This freedom to participate fully creates a stronger
+                                    foundation
+                                    for lifelong learning.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>STEM Confidence & Leadership</span>
+                                <svg class="accordion-arrow" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    In single-gender classrooms, girls are more likely to pursue STEM subjects and
+                                    report
+                                    greater confidence in mathematics and science. Our leadership programs ensure every
+                                    student has opportunities to develop her voice, take on responsibilities, and build
+                                    the skills needed to lead with confidence—whether in student government, athletics,
+                                    or the classroom.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>Freedom to Be Herself</span>
+                                <svg class="accordion-arrow" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    Without the pressure of trying to impress boys or conform to gender stereotypes,
+                                    girls at our school are free to explore interests that might otherwise be
+                                    discouraged.
+                                    Whether she's passionate about robotics, athletics, the arts, or humanitarian work,
+                                    your daughter will find a supportive community that celebrates her interests and
+                                    encourages her to pursue them fully.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span>Strong Sisterhood & Community</span>
+                                <svg class="accordion-arrow" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M7 10l5 5 5-5z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    The bonds formed at The Girls School last a lifetime. Our students develop deep
+                                    friendships with peers who share their ambitions and values. This sisterhood
+                                    provides a network of support that extends far beyond graduation—our alumnae
+                                    consistently credit their close friendships from school as foundational to their
+                                    personal and professional success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-sidebar">
+                    <div class="sidebar-card stats-card">
+                        <h4>The Girls School Advantage</h4>
+                        <div class="sidebar-stats">
+                            <div class="sidebar-stat">
+                                <span class="stat-value">94%</span>
+                                <span class="stat-desc">of girls' school graduates say they were offered greater
+                                    leadership opportunities</span>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="stat-value">80%</span>
+                                <span class="stat-desc">report higher confidence in math and science abilities</span>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="stat-value">3x</span>
+                                <span class="stat-desc">more likely to hold leadership positions in college and
+                                    career</span>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="stat-value">100%</span>
+                                <span class="stat-desc">of our graduates say they feel prepared for college and career
+                                    success</span>
+                            </div>
+                        </div>
+                        <p class="stats-source">Source: National Coalition of Girls' Schools Research</p>
+                    </div>
+
+                    <div class="sidebar-card quote-card">
+                        <blockquote>
+                            "My daughters have thrived at The Girls School in ways I never imagined. The teachers truly
+                            know them, challenge them, and support them. They've found their voices here."
+                        </blockquote>
+                        <cite>— Current Parent, Class of 2026</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our History Timeline -->
+    <section class="history-section" id="history">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Journey</span>
+                <h2 class="section-title">A Legacy of Empowerment Since 1952</h2>
+                <p class="section-subtitle">From our founding with 45 students to a thriving community of over 700,
+                    discover the milestones that have shaped The Girls School into what it is today.</p>
+            </div>
+
+            <div class="timeline-enhanced">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item enhanced" data-animate="fade-up" data-delay="100">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">1952</span>
+                        <h3>The Beginning of a Vision</h3>
+                        <p>
+                            Dr. Margaret Excellence, a pioneering educator with a vision for girls' education,
+                            founded The Girls School with just 45 students and a small dedicated faculty.
+                            Located in a converted Victorian home, the school was founded on the belief that
+                            girls deserved an education tailored to their unique needs and potential.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">📜</span>
+                                <span>First graduating class: 12 students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced right" data-animate="fade-up" data-delay="200">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M3 9h18M9 21V9" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">1965</span>
+                        <h3>First Major Expansion</h3>
+                        <p>
+                            The original campus was doubled in size with the addition of the Margaret Excellence
+                            Science Center and the Arts Wing. This expansion marked our commitment to providing
+                            comprehensive STEM education and artistic opportunities for girls at a time when such
+                            opportunities were often reserved for boys.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">🏗️</span>
+                                <span>Campus footprint expanded to 15 acres</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced" data-animate="fade-up" data-delay="300">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                                    fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">1985</span>
+                        <h3>Leadership Institute Launched</h3>
+                        <p>
+                            Recognizing the importance of empowering young women as leaders, we introduced our
+                            signature Leadership Development Program. This comprehensive initiative has since
+                            become a model for girls' schools worldwide,培养ing thousands of confident young
+                            women ready to make their mark on the world.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">⭐</span>
+                                <span>First Student Government formed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced right" data-animate="fade-up" data-delay="400">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">2000</span>
+                        <h3>Technology Integration</h3>
+                        <p>
+                            We became one of the first schools in the region to implement a 1:1 laptop program,
+                            integrating technology across all curriculum areas. This forward-thinking approach
+                            ensured our students were prepared for the digital age while using technology as a
+                            tool for creativity and innovation.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">💻</span>
+                                <span>First all-school computer lab opened</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced" data-animate="fade-up" data-delay="500">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">2010</span>
+                        <h3>DEI Initiative & Scholarship Expansion</h3>
+                        <p>
+                            Launched comprehensive Diversity, Equity, and Inclusion programs, including the
+                            Excellence Scholarship Fund to ensure that a Girls School education is accessible
+                            to talented students from all economic backgrounds. Our commitment to diversity
+                            strengthens our entire community.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">🌍</span>
+                                <span>International student program launched</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced right" data-animate="fade-up" data-delay="600">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced">
+                        <span class="timeline-year">2020</span>
+                        <h3>Innovation Center Opens</h3>
+                        <p>
+                            Opened our state-of-the-art Innovation Center, featuring maker spaces, robotics labs,
+                            and collaborative learning environments. This facility has become a hub for creativity,
+                            entrepreneurship, and hands-on learning, preparing students for the careers of tomorrow.
+                        </p>
+                        <div class="timeline-archival">
+                            <div class="archival-note">
+                                <span class="archival-icon">🔬</span>
+                                <span>First regional robotics championship won</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item enhanced" data-animate="fade-up" data-delay="700">
+                    <div class="timeline-marker-wrapper">
+                        <div class="timeline-marker milestone">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content enhanced milestone">
+                        <span class="timeline-year">Today</span>
+                        <h3>700+ Students Strong</h3>
+                        <p>
+                            Now serving over 700 students from diverse backgrounds across our Lower School (K-5)
+                            and Middle School (6-8), with a network of 5,000+ alumnae making an impact worldwide.
+                            Our commitment to empowering young women has never been stronger.
+                        </p>
+                        <div class="timeline-archival celebration">
+                            <div class="archival-note">
+                                <span class="archival-icon">🎓</span>
+                                <span>5,000+ alumnae leading globally</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diversity, Equity & SEL Section -->
+    <section class="diversity-section" id="diversity">
+        <div class="diversity-background"></div>
+        <div class="container">
+            <div class="section-header light" data-animate="fade-up">
+                <span class="section-tag">Our Commitment</span>
+                <h2 class="section-title">Diversity, Equity & Inclusion</h2>
+                <p class="section-subtitle">We believe that a diverse community strengthens the educational experience
+                    for all students. Our commitment to equity ensures every girl has what she needs to thrive.</p>
+            </div>
+
+            <div class="dei-grid">
+                <div class="dei-main-content" data-animate="fade-right">
+                    <div class="dei-narrative">
+                        <h3>A Community Where Every Girl Belongs</h3>
+                        <p>
+                            At The Girls School, we celebrate the rich tapestry of backgrounds, perspectives,
+                            and experiences that make up our community. We believe that exposure to diverse
+                            viewpoints prepares our students to thrive in an interconnected world and develop
+                            the empathy and understanding needed to be effective leaders.
+                        </p>
+                        <p>
+                            Our commitment to equity goes beyond words—it's embedded in our policies, our
+                            practices, and our everyday interactions. We work actively to identify and remove
+                            barriers that might prevent any student from reaching her full potential.
+                        </p>
+                    </div>
+
+                    <div class="dei-pillars" data-animate="fade-up" data-stagger="150">
+                        <div class="dei-pillar-card">
+                            <div class="pillar-visual">
+                                <svg viewBox="0 0 64 64" width="64" height="64">
+                                    <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="32" cy="24" r="10" fill="currentColor" />
+                                    <path d="M12 56c0-11 8-16 20-16s20 5 20 16" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h4>Belonging</h4>
+                            <p>Every girl knows she has a place and her voice matters. We create spaces where
+                                authenticity is celebrated and every student feels seen and valued.</p>
+                        </div>
+
+                        <div class="dei-pillar-card">
+                            <div class="pillar-visual">
+                                <svg viewBox="0 0 64 64" width="64" height="64">
+                                    <rect x="8" y="8" width="48" height="48" rx="4" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M32 20v24M20 32h24" fill="none" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Equity</h4>
+                            <p>We meet each student where she is and provide what she needs to succeed. Our approach
+                                recognizes that fairness sometimes means treating people differently.</p>
+                        </div>
+
+                        <div class="dei-pillar-card">
+                            <div class="pillar-visual">
+                                <svg viewBox="0 0 64 64" width="64" height="64">
+                                    <path d="M32 8L38 24L56 26L42 38L46 56L32 46L18 56L22 38L8 26L26 24z" fill="none"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Justice</h4>
+                            <p>We create systems that are fair and representative, teaching students to recognize
+                                injustice and empowering them to be agents of positive change.</p>
+                        </div>
+
+                        <div class="dei-pillar-card">
+                            <div class="pillar-visual">
+                                <svg viewBox="0 0 64 64" width="64" height="64">
+                                    <path d="M32 56s-20-12-20-28c0-11 9-20 20-20s20 9 20 20c0 16-20 28-20 28z"
+                                        fill="none" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="32" cy="32" r="10" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h4>Empathy</h4>
+                            <p>We cultivate understanding and value diverse perspectives, helping students develop the
+                                emotional intelligence needed to connect across differences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dei-sidebar" data-animate="fade-left" data-delay="200">
+                    <div class="dei-stats-large">
+                        <div class="dei-stat-large">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 100 100" width="100" height="100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)"
+                                        stroke-width="8" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="8"
+                                        stroke-dasharray="237" stroke-dashoffset="137" transform="rotate(-90 50 50)" />
+                                    <text x="50" y="55" text-anchor="middle" fill="white" font-size="20"
+                                        font-weight="700">42%</text>
+                                </svg>
+                            </div>
+                            <span class="stat-label">Students of Color</span>
+                        </div>
+
+                        <div class="dei-stat-large">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 100 100" width="100" height="100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)"
+                                        stroke-width="8" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="8"
+                                        stroke-dasharray="237" stroke-dashoffset="170" transform="rotate(-90 50 50)" />
+                                    <text x="50" y="55" text-anchor="middle" fill="white" font-size="20"
+                                        font-weight="700">28%</text>
+                                </svg>
+                            </div>
+                            <span class="stat-label">Financial Aid Budget</span>
+                        </div>
+
+                        <div class="dei-stat-large">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 100 100" width="100" height="100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)"
+                                        stroke-width="8" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="8"
+                                        stroke-dasharray="237" stroke-dashoffset="154" transform="rotate(-90 50 50)" />
+                                    <text x="50" y="55" text-anchor="middle" fill="white" font-size="20"
+                                        font-weight="700">35+</text>
+                                </svg>
+                            </div>
+                            <span class="stat-label">Countries Represented</span>
+                        </div>
+                    </div>
+
+                    <div class="sel-section">
+                        <h4>Social-Emotional Learning (SEL)</h4>
+                        <p>
+                            Our comprehensive SEL program develops five core competencies: self-awareness,
+                            self-management,
+                            social awareness, relationship skills, and responsible decision-making. These competencies
+                            are woven throughout the curriculum and school culture, ensuring students graduate not just
+                            academically prepared, but emotionally intelligent and resilient.
+                        </p>
+                        <div class="sel-competencies">
+                            <div class="competency">
+                                <span class="competency-icon">🧠</span>
+                                <span>Self-Awareness</span>
+                            </div>
+                            <div class="competency">
+                                <span class="competency-icon">🎯</span>
+                                <span>Self-Management</span>
+                            </div>
+                            <div class="competency">
+                                <span class="competency-icon">🤝</span>
+                                <span>Social Awareness</span>
+                            </div>
+                            <div class="competency">
+                                <span class="competency-icon">💬</span>
+                                <span>Relationship Skills</span>
+                            </div>
+                            <div class="competency">
+                                <span class="competency-icon">⚖️</span>
+                                <span>Decision Making</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty & Campus Culture -->
+    <section class="faculty-culture-section" id="faculty">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Educators</span>
+                <h2 class="section-title">Exceptional Faculty & Campus Culture</h2>
+                <p class="section-subtitle">Our teachers are passionate educators who inspire and mentor every student.
+                    Together, they create a campus culture that nurtures curiosity, celebrates achievement, and fosters
+                    lasting connections.</p>
+            </div>
+
+            <div class="faculty-overview" data-animate="fade-up" data-stagger="150">
+                <div class="faculty-stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <circle cx="32" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 56c0-13 11-20 24-20s24 7 24 20" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                    <span class="faculty-number" data-count="75">0</span>
+                    <span class="faculty-label">Full-time Faculty</span>
+                    <p class="stat-detail">Dedicated to girls' education</p>
+                </div>
+
+                <div class="faculty-stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <path d="M32 8L36 20L50 22L40 32L44 46L32 38L20 46L24 32L14 22L28 20z" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <span class="faculty-number" data-count="68">0</span>
+                    <span class="faculty-label">% Advanced Degrees</span>
+                    <p class="stat-detail">Masters and doctoral degrees</p>
+                </div>
+
+                <div class="faculty-stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M32 16v16l11 11" fill="none" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <span class="faculty-number" data-count="12">0</span>
+                    <span class="faculty-label">Student-Teacher Ratio</span>
+                    <p class="stat-detail">Personalized attention</p>
+                </div>
+
+                <div class="faculty-stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M8 24h48M24 8v48" fill="none" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <span class="faculty-number" data-count="15">0</span>
+                    <span class="faculty-label">Avg. Years Experience</span>
+                    <p class="stat-detail">Expertise and dedication</p>
+                </div>
+            </div>
+
+            <div class="culture-grid">
+                <div class="culture-card" data-animate="fade-up" data-delay="100">
+                    <div class="culture-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M20 32l8 8 16-16" fill="none" stroke="currentColor" stroke-width="3" />
+                        </svg>
+                    </div>
+                    <h3>Mentorship & Support</h3>
+                    <p>
+                        Every student at The Girls School has access to caring adult mentors who know her strengths,
+                        challenges, and aspirations. Our faculty take the time to build genuine relationships with
+                        students, providing guidance and encouragement throughout their educational journey.
+                    </p>
+                </div>
+
+                <div class="culture-card" data-animate="fade-up" data-delay="200">
+                    <div class="culture-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <path d="M32 8L40 24L58 28L44 40L50 58L32 48L14 58L20 40L6 28L24 24z" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Celebration of Achievement</h3>
+                    <p>
+                        We believe in recognizing and celebrating the achievements of our students at every level.
+                        From academic honors to artistic accomplishments, athletic achievements to acts of service,
+                        we create opportunities for every girl to shine and feel valued.
+                    </p>
+                </div>
+
+                <div class="culture-card" data-animate="fade-up" data-delay="300">
+                    <div class="culture-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <circle cx="32" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 56c0-11 9-20 20-20s20 9 20 20M32 40v12M24 52h16" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Growth Mindset</h3>
+                    <p>
+                        We embrace the power of "not yet." Students are encouraged to take risks, learn from failures,
+                        and understand that abilities can be developed through dedication and hard work. This mindset
+                        fosters resilience and a love of learning that extends far beyond the classroom.
+                    </p>
+                </div>
+
+                <div class="culture-card" data-animate="fade-up" data-delay="400">
+                    <div class="culture-icon">
+                        <svg viewBox="0 0 64 64" width="48" height="48">
+                            <path d="M32 8s-24 16-24 40c0 13 11 20 24 20s24-7 24-20c0-24-24-40-24-40z" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                            <circle cx="32" cy="40" r="8" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Service & Community</h3>
+                    <p>
+                        We believe in the power of service to transform both the giver and receiver. Our students
+                        engage in meaningful service projects that connect them to their community and develop
+                        empathy, leadership, and a commitment to making the world a better place.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faculty-cta" data-animate="fade-up">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h3>Meet Our Faculty</h3>
+                        <p>Our educators bring expertise, passion, and genuine care to every classroom.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Faculty Directory</a>
+                </div>
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h3>Join Our Team</h3>
+                        <p>We're always looking for talented educators who share our mission.</p>
+                    </div>
+                    <a href="#careers" class="btn btn-secondary">Careers at The Girls School</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Preview -->
+    <section class="leadership-preview" id="leadership">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Leadership</h2>
+                <p class="section-subtitle">Dedicated educators and administrators committed to our mission of
+                    empowering young women.</p>
+            </div>
+
+            <div class="leadership-grid" data-animate="fade-up" data-stagger="150">
+                <div class="leader-card enhanced">
+                    <div class="leader-image">
+                        <div class="leader-placeholder">
+                     <img src="./images/head.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Sarah Mitchell</h3>
+                        <p class="leader-title">Head of School</p>
+                        <p class="leader-bio">Ed.D. from Columbia University, 25 years in girls' education, former
+                            national educator of the year.</p>
+                        <a href="#" class="leader-link">Read Full Bio →</a>
+                    </div>
+                </div>
+
+                <div class="leader-card enhanced">
+                    <div class="leader-image">
+                        <div class="leader-placeholder">
+                                                 <img src="./images/head.png" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Jennifer Rodriguez</h3>
+                        <p class="leader-title">Head of Lower School</p>
+                        <p class="leader-bio">M.A. in Elementary Education, specialist in early childhood development
+                            and play-based learning.</p>
+                        <a href="#" class="leader-link">Read Full Bio →</a>
+                    </div>
+                </div>
+
+                <div class="leader-card enhanced">
+                    <div class="leader-image">
+                        <div class="leader-placeholder">
+                                          <img src="./images/head.png" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Michael Chen</h3>
+                        <p class="leader-title">Head of Middle School</p>
+                        <p class="leader-bio">M.Ed. from Harvard, expert in adolescent development and transitional
+                            education.</p>
+                        <a href="#" class="leader-link">Read Full Bio →</a>
+                    </div>
+                </div>
+
+                <div class="leader-card enhanced">
+                    <div class="leader-image">
+                        <div class="leader-placeholder">
+                                              <img src="./images/head.png" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Lisa Thompson</h3>
+                        <p class="leader-title">Director of Admissions</p>
+                        <p class="leader-bio">B.A. in Psychology, 15 years guiding families through the admissions
+                            journey.</p>
+                        <a href="#" class="leader-link">Read Full Bio →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="governance-links" data-animate="fade-up">
+                <a href="#" class="governance-link">Board of Trustees →</a>
+                <a href="#" class="governance-link">Administration →</a>
+                <a href="#" class="governance-link">Faculty & Staff Directory →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditation -->
+    <section class="accreditation-section" id="accreditation">
+        <div class="container">
+            <div class="accreditation-content" data-animate="fade-up">
+                <span class="section-tag">Our Standards</span>
+                <h2 class="section-title">Accreditation & Affiliations</h2>
+                <p class="section-subtitle">The Girls School maintains the highest standards through rigorous
+                    accreditation
+                    and active membership in leading educational organizations.</p>
+
+                <div class="accreditation-logos">
+                    <div class="accreditation-item">
+                        <div class="accreditation-badge">
+                            <svg viewBox="0 0 100 60" width="80" height="50">
+                                <rect fill="#2d5a7b" width="100" height="60" rx="8" />
+                                <text x="50" y="35" text-anchor="middle" fill="white" font-size="12"
+                                    font-weight="700">ISAS</text>
+                            </svg>
+                        </div>
+                        <span>ISAS Accredited</span>
+                        <p>Independent Schools Association of the Southwest</p>
+                    </div>
+                    <div class="accreditation-item">
+                        <div class="accreditation-badge">
+                            <svg viewBox="0 0 100 60" width="80" height="50">
+                                <rect fill="#4a90a4" width="100" height="60" rx="8" />
+                                <text x="50" y="35" text-anchor="middle" fill="white" font-size="12"
+                                    font-weight="700">NAIS</text>
+                            </svg>
+                        </div>
+                        <span>NAIS Member</span>
+                        <p>National Association of Independent Schools</p>
+                    </div>
+                    <div class="accreditation-item">
+                        <div class="accreditation-badge">
+                            <svg viewBox="0 0 100 60" width="80" height="50">
+                                <rect fill="#7ec8c8" width="100" height="60" rx="8" />
+                                <text x="50" y="35" text-anchor="middle" fill="white" font-size="12"
+                                    font-weight="700">NGWA</text>
+                            </svg>
+                        </div>
+                        <span>NGWA Member</span>
+                        <p>National Girls' Schools Association</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background"></div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <span class="section-tag">Visit Us</span>
+                <h2 class="section-title">Experience The Girls School</h2>
+                <p class="cta-text">Schedule a visit to see our campus and community in action. Discover firsthand
+                    how we empower young women to lead, innovate, and inspire.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html#visit" class="btn btn-primary btn-large">Visit Campus</a>
+                    <a href="admissions.html#apply" class="btn btn-outline-white btn-large">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg viewBox="0 0 50 50" width="50" height="50">
+                            <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="2" />
+                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
+                                fill="currentColor" />
+                        </svg>
+                        <span>The Girls School</span>
+                    </a>
+                    <p>Empowering girls to lead, innovate, and inspire since 1952.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html#who-we-are">Who We Are</a></li>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#history">Our History</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="about.html#careers">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#lower-school">Lower School</a></li>
+                        <li><a href="programs.html#middle-school">Middle School</a></li>
+                        <li><a href="programs.html#curriculum">Curriculum</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="admissions.html#apply">Apply Now</a></li>
+                        <li><a href="admissions.html#visit">Visit Campus</a></li>
+                        <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>1234 Excellence Way<br>City, State 12345</p>
+                        <p>(555) 123-4567</p>
+                        <p>info@girls-school.edu</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/hero-animations.js"></script>
+</body>
+
+</html>

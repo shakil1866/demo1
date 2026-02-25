@@ -16,41 +16,25 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
 </head>
 
 <body>
+    <!-- Animated Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
-            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
-                <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#2d5a7b" />
-                        <stop offset="50%" style="stop-color:#4a90a4" />
-                        <stop offset="100%" style="stop-color:#7ec8c8" />
-                    </linearGradient>
-                </defs>
-                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
-                    stroke-width="2" />
-                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
-                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
-                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
-                    fill="url(#logoGradient)">EXCELLENCE</text>
-            </svg>
+            <img src="./images/logo.png" alt="The Girls School Logo" srcset="">
             <div class="loader-progress"></div>
-            <p class="loader-text">Empowering Future Leaders</p>
+            <p class="loader-text">The Girls School of Austin</p>
         </div>
     </div>
 
     <!-- Sticky Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <svg viewBox="0 0 50 50" width="40" height="40">
-                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
-                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
-                </svg>
-                <span class="logo-text">The Girls School</span>
+            <a href="index.html" class="nav-logo" style="background-color: #7ec8c8; padding: 5px; border-radius: 5px;">
+                <img src="./images/logo.png" alt="" srcset="" style="width: 70px;  height: 50px;">
+
             </a>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -68,7 +52,7 @@
             </button>
 
             <ul class="nav-menu" id="navMenu">
-                   <li class="nav-item">
+                <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item has-mega-menu">
@@ -100,11 +84,7 @@
                                     <li><a href="about.html#campus">Campus Overview</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Building confident, compassionate leaders since 1952"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -136,11 +116,7 @@
                                     <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Nurturing curiosity, building excellence"</p>
-                                </div>
-                            </div>
+                       
                         </div>
                     </div>
                 </li>
@@ -172,11 +148,7 @@
                                     <li><a href="admissions.html#resources">Parent Resources</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Begin your journey with The Girls School"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -209,16 +181,11 @@
                                     <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
                                     <li><a href="support.html#donate">Donate Now</a></li>
                                     <li><a href="support.html#alumni">Alumni Network</a></li>
-                                    href="support.html <li>
-                                        <a#corporate">Corporate Partners</a>
+                                
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Together, we empower the next generation"</p>
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </li>
@@ -266,7 +233,8 @@
                             </svg>
                             <div>
                                 <h4>Address</h4>
-                                <p>1234 Excellence Way<br>City, State 12345</p>
+                                <p>2007 McCall Road,<br> Austin,
+TX 78703, USA</p>
                             </div>
                         </div>
 
@@ -278,7 +246,7 @@
                             </svg>
                             <div>
                                 <h4>Phone</h4>
-                                <p>(555) 123-4567</p>
+                                <p>(512) 478-7827</p>
                             </div>
                         </div>
 
@@ -290,7 +258,7 @@
                             </svg>
                             <div>
                                 <h4>Email</h4>
-                                <p>info@excellencegirls.edu</p>
+                                <p>info@thegirlsschool.org</p>
                             </div>
                         </div>
 
@@ -382,50 +350,128 @@
                 </div>
                 <div class="visit-visual">
                     <div class="map-placeholder">
-                        <svg viewBox="0 0 500 400" width="500" height="400">
-                            <rect fill="#e8f4f8" width="500" height="400" />
-                            <path d="M100 200 Q150 100 250 150 T400 200" fill="none" stroke="#2d5a7b" stroke-width="2"
-                                opacity="0.3" />
-                            <circle cx="250" cy="180" r="40" fill="#4a90a4" opacity="0.5" />
-                            <circle cx="250" cy="180" r="20" fill="#2d5a7b" />
-                            <text x="250" y="240" text-anchor="middle" fill="#2d5a7b" font-size="12">Excellence Girls
-                                Academy</text>
-                        </svg>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d558.4583484245175!2d-97.76349082460406!3d30.29286474250655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sthe%20girls%20school%20austin%20map%20location!5e0!3m2!1sen!2sin!4v1772005073296!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+   <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <span>The Girls School</span>
+<img src="./images/logo.png" alt="The Girls School Logo" srcset="">
                     </a>
-                    <p>A Private School for Girls K-8 since 2002.</p>
+                    <p>Empowering girls to lead with confidence, think boldly, and shape the future since 2002.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
+                                    fill="none" stroke="currentColor" stroke-width="2" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="footer-column">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#history">Our History</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="about.html#careers">Careers</a></li>
+                        <li><a href="about.html#campus">Campus</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-column">
                     <h4>Programs</h4>
                     <ul>
-                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="programs.html#lower-school">Lower School</a></li>
+                        <li><a href="programs.html#middle-school">Middle School</a></li>
+                        <li><a href="programs.html#curriculum">Curriculum</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                     </ul>
                 </div>
+
+                <div class="footer-column">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="admissions.html#apply">Apply Now</a></li>
+                        <li><a href="admissions.html#visit">Visit Campus</a></li>
+                        <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#open-house">Open House</a></li>
+                        <li><a href="admissions.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
                 <div class="footer-column footer-contact">
                     <h4>Contact</h4>
-                    <p>(555) 123-4567</p>
-                    <p>info@excellencegirls.edu</p>
+                    <address>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                            2007 McCall Road, Austin,<br> TX 78703, USA
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="currentColor" />
+                            </svg>
+                            (512) 478-7827
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                    fill="currentColor" />
+                            </svg>
+                            info@thegirlsschool.org
+                        </p>
+                    </address>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <p>&copy; 2026 The Girls School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Non-Discrimination</a>
+                </div>
             </div>
         </div>
     </footer>

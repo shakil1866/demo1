@@ -15,41 +15,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
 </head>
 
 <body>
+   <!-- Animated Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
-            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
-                <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#2d5a7b" />
-                        <stop offset="50%" style="stop-color:#4a90a4" />
-                        <stop offset="100%" style="stop-color:#7ec8c8" />
-                    </linearGradient>
-                </defs>
-                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
-                    stroke-width="2" />
-                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
-                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
-                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
-                    fill="url(#logoGradient)">EXCELLENCE</text>
-            </svg>
+            <img src="./images/logo.png" alt="The Girls School Logo" srcset="">
             <div class="loader-progress"></div>
-            <p class="loader-text">Empowering Future Leaders</p>
+            <p class="loader-text">The Girls School of Austin</p>
         </div>
     </div>
 
     <!-- Sticky Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <svg viewBox="0 0 50 50" width="40" height="40">
-                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
-                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
-                </svg>
-                <span class="logo-text">The Girls School</span>
+            <a href="index.html" class="nav-logo" style="background-color: #7ec8c8; padding: 5px; border-radius: 5px;">
+                <img src="./images/logo.png" alt="" srcset="" style="width: 70px;  height: 50px;">
+
             </a>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -99,11 +83,7 @@
                                     <li><a href="about.html#campus">Campus Overview</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Building confident, compassionate leaders since 1952"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -135,11 +115,7 @@
                                     <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Nurturing curiosity, building excellence"</p>
-                                </div>
-                            </div>
+                       
                         </div>
                     </div>
                 </li>
@@ -171,11 +147,7 @@
                                     <li><a href="admissions.html#resources">Parent Resources</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Begin your journey with The Girls School"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -208,14 +180,11 @@
                                     <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
                                     <li><a href="support.html#donate">Donate Now</a></li>
                                     <li><a href="support.html#alumni">Alumni Network</a></li>
-                                    <li><a href="support.html#corporate">Corporate Partners</a></li>
+                                
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Together, we empower the next generation"</p>
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </li>
@@ -254,125 +223,15 @@
                     Join our community of supporters who believe in the extraordinary
                     capacity of young women to change the world.
                 </p>
-                <div class="intro-actions" data-animate="fade-up" data-delay="600">
-                    <a href="#donate" class="btn btn-primary ">
-                        <span class="btn-text">Make a Gift</span>
-                        <span class="btn-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20">
-                                <path
-                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                                    fill="currentColor" />
-                            </svg>
-                        </span>
-                    </a>
-                    <a href="#impact" class="btn btn-secondary ">
-                        <span class="btn-text">See Our Impact</span>
-                        <span class="btn-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20">
-                                <path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
+               
             </div>
-            <div class="intro-scroll-indicator" data-animate="fade-in" data-delay="1000">
-                <span class="scroll-text">Discover More</span>
-                <div class="scroll-arrow">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                        <path d="M7 10l5 5 5-5z" fill="currentColor" />
-                    </svg>
-                </div>
-            </div>
+            
         </div>
     </section>
 
-    <!-- Why Support Section -->
-    <section class="why-support" id="why-support">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Why Your Support Matters</span>
-                <h2 class="section-title">Investing in Girls, Investing in Future</h2>
-                <p class="section-subtitle">
-                    For over two decades, The Girls' School has been dedicated to nurturing
-                    confident, compassionate leaders. Your support amplifies our mission.
-                </p>
-            </div>
-
-            <div class="support-narrative">
-                <div class="narrative-content" data-animate="fade-right">
-                    <h3>The Power of All-Girls Education</h3>
-                    <p>
-                        Research consistently shows that girls in single-gender environments
-                        develop stronger confidence, take more academic risks, and excel in
-                        STEM fields. At The Girls' School, we witness this transformation
-                        every day.
-                    </p>
-                    <p>
-                        Our graduates emerge as fearless leaders, ready to challenge conventions
-                        and shape industries. But this transformative education isn't possible
-                        without generous supporters like you.
-                    </p>
-                    <div class="narrative-stats">
-                        <div class="narrative-stat">
-                            <span class="n-stat-number" data-count="95">0</span>
-                            <span class="n-stat-suffix">%</span>
-                            <span class="n-stat-label">college acceptance rate</span>
-                        </div>
-                        <div class="narrative-stat">
-                            <span class="n-stat-number" data-count="50">0</span>
-                            <span class="n-stat-suffix">+</span>
-                            <span class="n-stat-label">years of excellence</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="narrative-visual" data-animate="fade-left">
-                    <div class="narrative-image-wrapper">
-                        <div class="narrative-image">
-                         <img src="" alt="not found" srcset="">
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="values-grid" data-animate="fade-up" data-stagger="150">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" width="40" height="40">
-                            <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2" />
-                            <path d="M24 14v10l7 7" fill="none" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h4>Accessibility</h4>
-                    <p>Financial aid ensures every qualified girl can access our transformative education regardless of
-                        means.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" width="40" height="40">
-                            <polygon points="24,4 30,18 46,18 34,28 38,44 24,34 10,44 14,28 2,18 18,18" fill="none"
-                                stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h4>Excellence</h4>
-                    <p>Your gifts fund exceptional faculty, innovative programs, and state-of-the-art resources.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" width="40" height="40">
-                            <circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2" />
-                            <path d="M10 44c0-8 6-14 14-14s14 6 14 14" fill="none" stroke="currentColor"
-                                stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h4>Community</h4>
-                    <p>Supporters become part of a vibrant network dedicated to lifting up the next generation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Impact of Giving Section -->
-    <section class="impact-giving" id="impact">
+    <!-- <section class="impact-giving" id="impact">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Your Impact</span>
@@ -478,8 +337,8 @@
                 </div>
             </div>
 
-            <!-- Impact Stats -->
-            <div class="impact-stats-row" data-animate="fade-up">
+           < Impact Stats -->
+            <!-- <div class="impact-stats-row" data-animate="fade-up">
                 <div class="impact-stat-item">
                     <span class="impact-number" data-count="500">0</span>
                     <span class="impact-suffix">+</span>
@@ -502,7 +361,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --> -->
 
     <!-- Ways to Give Section -->
     <section class="ways-to-give" id="options">
@@ -511,8 +370,7 @@
                 <span class="section-tag">Make Your Impact</span>
                 <h2 class="section-title">Ways to Give</h2>
                 <p class="section-subtitle">
-                    Whether you give once or commit to ongoing support, every contribution
-                    matters. Find the giving option that resonates with you.
+                   The Girls’ School of Austin is a 501c3 organization and all contributions are tax-deductible to the extent allowable by law. For more information, please contact the Advancement Office at 512-478-7827 or by email.
                 </p>
             </div>
 
@@ -523,14 +381,14 @@
                             stroke-width="2" />
                         <circle cx="12" cy="4" r="3" fill="none" stroke="currentColor" stroke-width="2" />
                     </svg>
-                    Annual Fund
+             Cash Gifts
                 </button>
                 <button class="tab-btn" data-tab="special" data-animate="fade-up" data-delay="100">
                     <svg viewBox="0 0 24 24" width="20" height="20">
                         <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="none"
                             stroke="currentColor" stroke-width="2" />
                     </svg>
-                    Special Programs
+               Credit Card Gifts
                 </button>
                 <button class="tab-btn" data-tab="events" data-animate="fade-up" data-delay="200">
                     <svg viewBox="0 0 24 24" width="20" height="20">
@@ -538,7 +396,7 @@
                             stroke-width="2" />
                         <path d="M16 2v4M8 2v4M3 10h18" fill="none" stroke="currentColor" stroke-width="2" />
                     </svg>
-                    Events
+               Securities
                 </button>
                 <button class="tab-btn" data-tab="planned" data-animate="fade-up" data-delay="300">
                     <svg viewBox="0 0 24 24" width="20" height="20">
@@ -546,7 +404,7 @@
                         <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
                         <path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" />
                     </svg>
-                    Planned Giving
+                Matching Gifts
                 </button>
             </div>
 
@@ -554,74 +412,25 @@
                 <div class="giving-panel active" id="annual-panel">
                     <div class="panel-content" data-animate="fade-right">
                         <div class="panel-icon">
-                            <svg viewBox="0 0 64 64" width="64" height="64">
-                                <rect x="8" y="20" width="48" height="32" rx="4" fill="none" stroke="currentColor"
-                                    stroke-width="2" />
-                                <circle cx="32" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M20 50l8 8 16-16" fill="none" stroke="currentColor" stroke-width="2" />
-                            </svg>
+                       
                         </div>
-                        <h3>Annual Fund</h3>
+                        <h3>Cash Gifts</h3>
                         <p>
-                            The Annual Fund is the heartbeat of our school, providing immediate
-                            resources for daily operations and emerging needs. Your gift directly
-                            supports:
+                       The Girls’ School accepts both cash and checks. Please make checks payable to The Girls’ School of Austin, and include your current contact information.
                         </p>
                         <ul class="giving-list">
                             <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Financial aid and scholarships
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Faculty salaries and development
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Academic programs and curriculum enhancement
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Student activities and enrichment
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Campus maintenance and improvements
-                            </li>
+                              
+                              You may drop off your contribution at the school or mail it to:
+
+The Girls’ School of Austin, ATTN: Development Office
+2007 McCall Road
+Austin, TX  78703
+                   
                         </ul>
-                        <a href="#" class="btn btn-primary">Give to Annual Fund</a>
+                        <a href="#" class="btn btn-primary">GIving</a>
                     </div>
-                    <div class="panel-visual" data-animate="fade-left">
-                        <div class="visual-box">
-                            <div class="progress-circle">
-                                <svg viewBox="0 0 120 120" width="120" height="120">
-                                    <circle cx="60" cy="60" r="54" fill="none" stroke="var(--gray-200)"
-                                        stroke-width="8" />
-                                    <circle cx="60" cy="60" r="54" fill="none" stroke="var(--primary)" stroke-width="8"
-                                        stroke-dasharray="340" stroke-dashoffset="68" stroke-linecap="round"
-                                        class="progress-ring" />
-                                </svg>
-                                <div class="progress-text">
-                                    <span class="progress-value">80%</span>
-                                    <span class="progress-label">of goal reached</span>
-                                </div>
-                            </div>
-                            <div class="progress-details">
-                                <p><strong>$840,000</strong> raised of $1,050,000 goal</p>
-                                <p class="progress-deadline">Campaign ends March 31, 2025</p>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <div class="giving-panel" id="special-panel">
@@ -632,87 +441,14 @@
                                     stroke="currentColor" stroke-width="2" />
                             </svg>
                         </div>
-                        <h3>Special Programs</h3>
+                        <h3>Credit Card Gifts</h3>
                         <p>
-                            Support specific initiatives that align with your passions,
-                            from arts and athletics to technology and environmental stewardship.
+                    Make a contribution to the Firebird Fund using your Amex, Visa, Discover, or MasterCard.
                         </p>
-                        <ul class="giving-list">
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                STEM Laboratory Enhancement
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Arts and Music Programs
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Athletic Facilities and Equipment
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Environmental Education Initiatives
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                International Exchange Programs
-                            </li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Explore Programs</a>
+                      
+                        <a href="#" class="btn btn-primary">Giving</a>
                     </div>
-                    <div class="panel-visual" data-animate="fade-left">
-                        <div class="program-cards">
-                            <div class="program-card">
-                                <div class="program-icon">
-                                    <svg viewBox="0 0 48 48" width="32" height="32">
-                                        <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor"
-                                            stroke-width="2" />
-                                        <path d="M24 12v12l8 8" fill="none" stroke="currentColor" stroke-width="2" />
-                                    </svg>
-                                </div>
-                                <h4>STEM Lab</h4>
-                                <p>State-of-the-art equipment for hands-on learning</p>
-                            </div>
-                            <div class="program-card">
-                                <div class="program-icon">
-                                    <svg viewBox="0 0 48 48" width="32" height="32">
-                                        <rect x="8" y="8" width="32" height="32" rx="4" fill="none"
-                                            stroke="currentColor" stroke-width="2" />
-                                        <circle cx="18" cy="20" r="4" fill="currentColor" />
-                                        <circle cx="30" cy="20" r="4" fill="currentColor" />
-                                        <path d="M8 32h32M16 32v8M32 32v8" fill="none" stroke="currentColor"
-                                            stroke-width="2" />
-                                    </svg>
-                                </div>
-                                <h4>Arts Wing</h4>
-                                <p>Spaces for creativity and expression</p>
-                            </div>
-                            <div class="program-card">
-                                <div class="program-icon">
-                                    <svg viewBox="0 0 48 48" width="32" height="32">
-                                        <circle cx="24" cy="16" r="8" fill="none" stroke="currentColor"
-                                            stroke-width="2" />
-                                        <path d="M8 44c0-8 7-14 16-14s16 6 16 14" fill="none" stroke="currentColor"
-                                            stroke-width="2" />
-                                        <path d="M14 28l6 6 12-12" fill="none" stroke="currentColor" stroke-width="2" />
-                                    </svg>
-                                </div>
-                                <h4>Athletics</h4>
-                                <p>Facilities for healthy competition</p>
-                            </div>
-                        </div>
-                    </div>
+        
                 </div>
 
                 <div class="giving-panel" id="events-panel">
@@ -726,36 +462,12 @@
                                 <circle cx="44" cy="42" r="6" fill="var(--accent)" opacity="0.5" />
                             </svg>
                         </div>
-                        <h3>Events & Galas</h3>
+                        <h3>Securities</h3>
                         <p>
-                            Join us at our signature events throughout the year. Attendance,
-                            sponsorship, and auction donations all support our students.
+                           By giving the stock directly to The Girls’ School you avoid paying capital gains taxes on the increase in value and you receive a tax deduction for the fair market value. Please contact Robyn Burchfiel, Interim Director of Advancement, for transfer information to share with your broker. Please call 512-478-7827 or email for a securities transfer form and instructions.
                         </p>
-                        <div class="upcoming-events">
-                            <div class="event-item">
-                                <div class="event-date">
-                                    <span class="month">MAR</span>
-                                    <span class="day">22</span>
-                                </div>
-                                <div class="event-details">
-                                    <h4>Spring Gala</h4>
-                                    <p>Evening of celebration honoring our community</p>
-                                </div>
-                                <a href="#" class="btn btn-sm">Learn More</a>
-                            </div>
-                            <div class="event-item">
-                                <div class="event-date">
-                                    <span class="month">MAY</span>
-                                    <span class="day">10</span>
-                                </div>
-                                <div class="event-details">
-                                    <h4>Annual Auction</h4>
-                                    <p>Bid on exclusive items for scholarship support</p>
-                                </div>
-                                <a href="#" class="btn btn-sm">Save the Date</a>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-primary">View All Events</a>
+              
+                        <a href="#" class="btn btn-primary">Giving</a>
                     </div>
                 </div>
 
@@ -768,61 +480,14 @@
                                 <path d="M32 20v24M20 32h24" fill="none" stroke="currentColor" stroke-width="2" />
                             </svg>
                         </div>
-                        <h3>Planned Giving</h3>
+                        <h3>Matching Gifts</h3>
                         <p>
-                            Create a lasting legacy by including The Girls' School in your
-                            estate plans. Planned gifts provide stable, long-term support
-                            for future generations of students.
+                         Maximize your contribution to the GSA with a corporate matching gift! Many corporations match employee contributions to qualified charitable organizations such as GSA. Contact your Human Resources department for the proper forms and instructions. GSA EIN: 74-2963379
                         </p>
-                        <ul class="giving-list">
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Bequests in your will or trust
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Charitable remainder trusts
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Charitable lead trusts
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Donor-advised funds
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 20 20" width="16" height="16">
-                                    <path d="M5 10l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                Life insurance beneficiaries
-                            </li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Learn About Legacy Giving</a>
+                        
+                        <a href="#" class="btn btn-primary"> Giving</a>
                     </div>
-                    <div class="panel-visual" data-animate="fade-left">
-                        <div class="legacy-box">
-                            <div class="legacy-icon">
-                                <svg viewBox="0 0 64 64" width="48" height="48">
-                                    <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
-                                    <path d="M20 44l8-8 8 8" fill="none" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                            </div>
-                            <h4>Legacy Society</h4>
-                            <p>Join our Legacy Society to receive special recognition and
-                                exclusive updates on how your planned gift will transform
-                                futures for years to come.</p>
-                            <a href="#" class="btn btn-outline">Join the Society</a>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -939,7 +604,7 @@
     </section>
 
     <!-- Community Involvement Section -->
-    <section class="community-involvement" id="community">
+    <!-- <section class="community-involvement" id="community">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Get Involved</span>
@@ -1098,7 +763,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Volunteer Section -->
     <section class="volunteer-section" id="volunteer">
@@ -1154,28 +819,7 @@
                 </div>
                 <div class="volunteer-visual">
                     <div class="visual-wrapper">
-                        <svg viewBox="0 0 400 350" width="400" height="350">
-                            <defs>
-                                <linearGradient id="volGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2d5a7b;stop-opacity:0.1" />
-                                    <stop offset="100%" style="stop-color:#7ec8c8;stop-opacity:0.2" />
-                                </linearGradient>
-                            </defs>
-                            <rect fill="url(#volGrad)" width="400" height="350" rx="20" />
-                            <circle cx="200" cy="120" r="60" fill="var(--primary)" opacity="0.15" />
-                            <circle cx="200" cy="120" r="40" fill="var(--primary-light)" opacity="0.2" />
-                            <circle cx="200" cy="120" r="20" fill="var(--primary-lighter)" opacity="0.3" />
-                            <text x="200" y="125" text-anchor="middle" fill="var(--primary-dark)" font-size="16"
-                                font-weight="600">Community</text>
-
-                            <circle cx="100" cy="250" r="35" fill="var(--accent)" opacity="0.2" />
-                            <circle cx="300" cy="250" r="35" fill="var(--primary-light)" opacity="0.2" />
-                            <circle cx="200" cy="280" r="30" fill="var(--primary)" opacity="0.15" />
-
-                            <path d="M200 160 L200 200" stroke="var(--primary)" stroke-width="2" opacity="0.3" />
-                            <path d="M160 180 L200 160 L240 180" fill="none" stroke="var(--primary)" stroke-width="2"
-                                opacity="0.3" />
-                        </svg>
+                     <img src="./images/volan.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -1235,81 +879,129 @@
                     </a>
                 </div>
                 <div class="cta-contact" data-animate="fade-up" data-delay="800">
-                    <p>Questions about giving?</p>
-                    <a href="mailto:giving@excellencegirls.edu">giving@excellencegirls.edu</a>
+                    <a href="mailto:info@thegirlsschool.orgedu">info@thegirlsschool.org</a>
                     <span class="cta-divider">|</span>
-                    <a href="tel:+15551234567">(555) 123-4567</a>
+                    <a href="tel:+(512) 478-7827">(512) 478-7827</a>
                 </div>
             </div>
         </div>
     </section>
 
+   <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <svg viewBox="0 0 50 50" width="40" height="40">
-                            <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
-                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
-                                fill="#2d5a7b" />
-                        </svg>
-                        <span>The Girls School</span>
+<img src="./images/logo.png" alt="The Girls School Logo" srcset="">
                     </a>
-                    <p>A Private School for Girls K-8 since 2002.</p>
-                </div>
-                <div class="footer-column">
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="about.html#mission">Mission & Vision</a></li>
-                        <li><a href="about.html#leadership">Leadership</a></li>
-                        <li><a href="about.html#careers">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="programs.html">Our Programs</a></li>
-                        <li><a href="programs.html#lower-school">Lower School</a></li>
-                        <li><a href="programs.html#middle-school">Middle School</a></li>
-                        <li><a href="programs.html#extracurricular">Activities</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-contact">
-                    <h4>Contact</h4>
-                    <p>(555) 123-4567</p>
-                    <p>giving@excellencegirls.edu</p>
-                    <div class="footer-social">
+                    <p>Empowering girls to lead with confidence, think boldly, and shape the future since 2002.</p>
+                    <div class="social-links">
                         <a href="#" aria-label="Facebook">
                             <svg viewBox="0 0 24 24" width="20" height="20">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
                                     fill="currentColor" />
                             </svg>
                         </a>
                         <a href="#" aria-label="Instagram">
                             <svg viewBox="0 0 24 24" width="20" height="20">
-                                <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor"
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
                                     stroke-width="2" />
-                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
-                                <circle cx="18" cy="6" r="1" fill="currentColor" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
                             </svg>
                         </a>
                         <a href="#" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24" width="20" height="20">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
                                     fill="none" stroke="currentColor" stroke-width="2" />
-                                <rect x="2" y="9" width="4" height="12" fill="none" stroke="currentColor"
-                                    stroke-width="2" />
-                                <circle cx="4" cy="4" r="2" fill="currentColor" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
                             </svg>
                         </a>
                     </div>
                 </div>
+
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#history">Our History</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="about.html#careers">Careers</a></li>
+                        <li><a href="about.html#campus">Campus</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#lower-school">Lower School</a></li>
+                        <li><a href="programs.html#middle-school">Middle School</a></li>
+                        <li><a href="programs.html#curriculum">Curriculum</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="admissions.html#apply">Apply Now</a></li>
+                        <li><a href="admissions.html#visit">Visit Campus</a></li>
+                        <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#open-house">Open House</a></li>
+                        <li><a href="admissions.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                            2007 McCall Road, Austin,<br> TX 78703, USA
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="currentColor" />
+                            </svg>
+                            (512) 478-7827
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                    fill="currentColor" />
+                            </svg>
+                            info@thegirlsschool.org
+                        </p>
+                    </address>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 The Girls School. All rights reserved.</p>
-                <p class="footer-tagline">Empowering confident, compassionate leaders since 1952</p>
+                <p>&copy; 2026 The Girls School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Non-Discrimination</a>
+                </div>
             </div>
         </div>
     </footer>

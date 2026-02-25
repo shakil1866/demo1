@@ -16,41 +16,25 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/admissions.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
 </head>
 
 <body>
+   <!-- Animated Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
-            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
-                <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#2d5a7b" />
-                        <stop offset="50%" style="stop-color:#4a90a4" />
-                        <stop offset="100%" style="stop-color:#7ec8c8" />
-                    </linearGradient>
-                </defs>
-                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
-                    stroke-width="2" />
-                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
-                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
-                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
-                    fill="url(#logoGradient)">EXCELLENCE</text>
-            </svg>
+            <img src="./images/logo.png" alt="The Girls School Logo" srcset="">
             <div class="loader-progress"></div>
-            <p class="loader-text">Empowering Future Leaders</p>
+            <p class="loader-text">The Girls School of Austin</p>
         </div>
     </div>
 
     <!-- Sticky Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <svg viewBox="0 0 50 50" width="40" height="40">
-                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
-                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
-                </svg>
-                <span class="logo-text">The Girls School</span>
+            <a href="index.html" class="nav-logo" style="background-color: #7ec8c8; padding: 5px; border-radius: 5px;">
+                <img src="./images/logo.png" alt="" srcset="" style="width: 70px;  height: 50px;">
+
             </a>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -100,11 +84,7 @@
                                     <li><a href="about.html#campus">Campus Overview</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Building confident, compassionate leaders since 1952"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -136,17 +116,13 @@
                                     <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Nurturing curiosity, building excellence"</p>
-                                </div>
-                            </div>
+                       
                         </div>
                     </div>
                 </li>
 
                 <li class="nav-item has-mega-menu">
-                    <a href="admissions.html" class="nav-link active">
+                    <a href="admissions.html" class="nav-link">
                         Admissions
                         <svg class="nav-arrow" viewBox="0 0 24 24" width="16" height="16">
                             <path d="M7 10l5 5 5-5z" />
@@ -172,11 +148,7 @@
                                     <li><a href="admissions.html#resources">Parent Resources</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Begin your journey with The Girls School"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -209,16 +181,11 @@
                                     <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
                                     <li><a href="support.html#donate">Donate Now</a></li>
                                     <li><a href="support.html#alumni">Alumni Network</a></li>
-                                    href="support.html <li>
-                                        <a#corporate">Corporate Partners</a>
+                                
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Together, we empower the next generation"</p>
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </li>
@@ -251,32 +218,14 @@
                     <a href="#inquiry" class="btn btn-primary btn-large">Request Information</a>
                     <a href="#visit" class="btn btn-outline-white btn-large">Schedule a Visit</a>
                 </div>
-                <div class="intro-stats" data-animate="fade-up" data-delay="600">
-                    <div class="intro-stat">
-                        <span class="stat-number">70+</span>
-                        <span class="stat-label">Years of Excellence</span>
-                    </div>
-                    <div class="intro-stat">
-                        <span class="stat-number">450+</span>
-                        <span class="stat-label">Students K-8</span>
-                    </div>
-                    <div class="intro-stat">
-                        <span class="stat-number">12:1</span>
-                        <span class="stat-label">Student-Teacher Ratio</span>
-                    </div>
-                </div>
+              
             </div>
         </div>
-        <div class="intro-scroll-indicator" data-animate="fade-up" data-delay="800">
-            <span>Scroll to explore</span>
-            <svg viewBox="0 0 24 24" width="24" height="24">
-                <path d="M7 10l5 5 5-5z" fill="currentColor" />
-            </svg>
-        </div>
+      
     </section>
 
     <!-- Why Choose The Girls' School -->
-    <section class="why-choose-section" id="why-choose">
+    <!-- <section class="why-choose-section" id="why-choose">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Our Difference</span>
@@ -365,7 +314,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Admissions Philosophy -->
     <section class="philosophy-section" id="philosophy">
@@ -576,7 +525,7 @@
             <div class="process-cta" data-animate="fade-up">
                 <div class="cta-content">
                     <h4>Ready to Begin?</h4>
-                    <p>The priority deadline is January 15th. We encourage early applications as spaces fill quickly.
+                    <p> We encourage early applications as spaces fill quickly.
                     </p>
                 </div>
                 <a href="#inquiry" class="btn btn-primary">Start Your Inquiry</a>
@@ -590,7 +539,7 @@
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Investment</span>
                 <h2 class="section-title">Tuition & Financial Aid</h2>
-                <p class="section-subtitle">We believe financial circumstances should never prevent a qualified student
+                <p class="section-subtitle">The Girls’ School of Austin values the diversity of our community and our world, and does not discriminate on the basis of race, color, religion, sexual orientation, or national origin. In addition, since The Girls’ School of Austin seeks to provide a superior education to students of all socioeconomic backgrounds, it offers tuition assistance to families demonstrating need.We believe financial circumstances should never prevent a qualified student
                     from joining our community</p>
             </div>
 
@@ -612,9 +561,9 @@
                                     </svg>
                                 </span>
                                 <span class="level-name">Lower School</span>
-                                <span class="level-grades">K - 5th Grade</span>
+                                <span class="level-grades">K - 4th Grade</span>
                             </div>
-                            <div class="tuition-price">$24,500</div>
+                            <div class="tuition-price">$22,560</div>
                         </div>
                         <div class="tuition-card">
                             <div class="tuition-level">
@@ -624,9 +573,33 @@
                                     </svg>
                                 </span>
                                 <span class="level-name">Middle School</span>
-                                <span class="level-grades">6th - 8th Grade</span>
+                                <span class="level-grades">5th - 6th Grade</span>
                             </div>
-                            <div class="tuition-price">$26,800</div>
+                            <div class="tuition-price">$24,050</div>
+                        </div>
+                         <div class="tuition-card">
+                            <div class="tuition-level">
+                                <span class="level-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z" fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span class="level-name">Middle School</span>
+                                <span class="level-grades">Grade 7th</span>
+                            </div>
+                            <div class="tuition-price">$24,230</div>
+                        </div>
+                         <div class="tuition-card">
+                            <div class="tuition-level">
+                                <span class="level-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z" fill="currentColor" />
+                                    </svg>
+                                </span>
+                                <span class="level-name">Middle School</span>
+                                <span class="level-grades">Grade 8th</span>
+                            </div>
+                            <div class="tuition-price">$24,810</div>
                         </div>
                     </div>
                     <div class="tuition-note">
@@ -639,29 +612,31 @@
 
                 <div class="financial-aid-panel" data-animate="fade-up" data-delay="200">
                     <div class="aid-header">
-                        <h3>Financial Aid</h3>
-                        <p>We're committed to making our education accessible to qualified students from diverse
-                            backgrounds.</p>
+                        <h3>Texas Education Freedom Accounts (TEFA)</h3>
+                        <p>While the Girls’ School of Austin does not participate in the Texas Education Freedom Accounts (TEFA) program, we are proud to offer robust, need-based Tuition Assistance. We encourage families who may benefit from assistance to apply. </p>
                     </div>
-                    <div class="aid-stats">
-                        <div class="aid-stat" data-animate="fade-up" data-delay="300">
-                            <div class="stat-value" data-count="28">0%</div>
-                            <div class="stat-label">of students receive aid</div>
-                        </div>
-                        <div class="aid-stat" data-animate="fade-up" data-delay="400">
-                            <div class="stat-value" data-count="2100000">$0</div>
-                            <div class="stat-label">in aid awarded annually</div>
-                        </div>
-                    </div>
+                   
                     <div class="aid-details">
-                        <h4>Aid Considerations</h4>
+                        <h4>Required Annual Registration Fee</h4>
                         <ul>
-                            <li>Awarded based on financial need</li>
-                            <li>Available to families of all backgrounds</li>
-                            <li>Confidential and non-judgmental process</li>
-                            <li>Reapply annually if circumstances change</li>
+                            <li>$1000 (Due with signed contract)</li>
+                            <li>Non-refundable</li>
                         </ul>
                     </div>
+                      <div class="aid-details">
+                        <h4>One-Time Facility Use Fee</h4>
+                        <ul>
+                            <li>One-time fee for all new entering students: $2,500 (Due with signed contract)</li>
+                        </ul>
+                    </div>
+                      <div class="aid-details">
+                        <h4>Tuition and Program feese</h4>
+                        <ul>
+                            <li>Tuition and program fees cover all expenses except piano instruction, lunches, health screening, uniforms, After Care, and other optional activities for which the school incurs an additional expense. </li>
+                            <li>Tuition and program fees may be paid annually, semi-annually, or in ten monthly installments through the FACTS program.</li>
+                        </ul>
+                    </div>
+
                     <a href="#" class="btn btn-primary btn-full">Learn About Financial Aid</a>
                 </div>
 
@@ -669,17 +644,19 @@
                     <h3>Payment Options</h3>
                     <div class="payment-options">
                         <div class="option">
-                            <span class="option-name">Annual</span>
-                            <span class="option-discount">2% discount</span>
-                            <span class="option-amount">Due August 1</span>
+                            <span class="option-name">2-day option Monthly Plan</span>
+                            <span class="option-discount">$240/mo/student </span>
+                            <span class="option-amount"> daily rate is $30 </span>
                         </div>
                         <div class="option">
-                            <span class="option-name">Semi-Annual</span>
-                            <span class="option-amount">Due August & January</span>
+                            <span class="option-name">3-day option Monthly Plan</span>
+                             <span class="option-discount">$360/mo/student </span>
+                              <span class="option-amount"> daily rate is $30 </span>
                         </div>
                         <div class="option">
-                            <span class="option-name">Monthly</span>
-                            <span class="option-amount">10 monthly payments</span>
+                            <span class="option-name">5-day option Monthly Plan</span>
+                              <span class="option-discount"> $475/mo/student </span>
+                               <span class="option-amount">daily rate is $24  </span>
                         </div>
                     </div>
                     <div class="payment-note">
@@ -730,9 +707,8 @@
                         </svg>
                     </div>
                     <h3>Open House Events</h3>
-                    <p>Join us for our signature open house events. Meet current families, observe classes, and
-                        experience our community energy.</p>
-                    <div class="events-list">
+                    <p>The Girls’ School of Austin hosts two types of open houses from September through March: Kindergarten-8th grade, and Middle School. An open house is a wonderful way to experience our campus, classrooms, and teachers. Tours begin at 10 am and last approximately an hour and 15 minutes to allow you time to ask questions and discuss our programs. </p>
+                    <!-- <div class="events-list">
                         <div class="event-item">
                             <div class="event-date">
                                 <span class="month">MAR</span>
@@ -763,7 +739,7 @@
                                 <span>10:00 AM - 2:00 PM</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="#" class="btn btn-primary btn-full">Register for Open House</a>
                 </div>
 
@@ -796,11 +772,8 @@
                 <div class="graduation-text" data-animate="fade-right">
                     <span class="section-tag">Future Ready</span>
                     <h2 class="section-title">Life After Graduation</h2>
-                    <p class="section-lead">Our graduates are prepared, confident, and ready to thrive in top high
-                        schools and beyond.</p>
-                    <p>Every aspect of our program is designed to prepare students for the next stage of their
-                        educational journey. From rigorous academics to leadership development, our girls graduate with
-                        the skills, confidence, and character to succeed.</p>
+                    <p class="section-lead">Our graduates leave GSA with a wealth of knowledge, a network of GSA sisters, and the passion and confidence to lead intellectually vibrant and fulfilling lives.</p>
+                    <p>Middle school students and their parents are assisted in their search by our placement director. The Girls’ School graduates have a wealth of secondary school opportunities available to them. High school options will include an assessment of a student’s interests and access to programs (whether the student lives within the AISD boundary, for example).</p>
 
                     <div class="graduation-metrics">
                         <div class="metric">
@@ -824,14 +797,13 @@
                             <svg viewBox="0 0 24 24" width="32" height="32">
                                 <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="#7ec8c8" />
                             </svg>
-                            <p>"The Girls' School gave me the confidence to pursue leadership roles and excel in STEM.
-                                I'm now thriving at my first-choice boarding school."</p>
+                            <p>"After GSA, I went to Westlake High School and UT Austin.  In 2014, I graduated with a degree in Textiles & Apparel and moved to New York City. In New York, I’ve worked as a fashion freelancer at Vogue Magazine and as a production artist at Verrier Handcrafted. I’m also planning a move to LA in February.  In 5 years, I see myself still working in a creative job, in a place that I love, and surrounded by people and a landscape that inspire me."</p>
                         </div>
                         <div class="story-author">
-                            <div class="author-avatar">EM</div>
+                            <div class="author-avatar"><img src="./images/alex.webp" alt="" srcset=""></div>
                             <div class="author-info">
-                                <strong>Emma M.</strong>
-                                <span>Class of 2023, Now at Phillips Exeter Academy</span>
+                                <strong>Alex Kelly </strong>
+                                <span>January 2016</span>
                             </div>
                         </div>
                     </div>
@@ -841,14 +813,13 @@
                             <svg viewBox="0 0 24 24" width="32" height="32">
                                 <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="#7ec8c8" />
                             </svg>
-                            <p>"My daughter went from shy to student council president in just two years. The
-                                environment here is truly transformative."</p>
+                            <p>"After I graduated from GSA in 2008, I went on to complete a B.A. in history at St. Edward’s University and have just started a PhD program at the University of Illinois at Chicago to study Andean Archaeology. This past summer I worked on numerous sites throughout Peru analyzing colonial-era plant materials and helping with GPR analysis. GPR means Ground Penetrating Radar and it allows archaeologists to see structures and other materials hidden under the ground’s surface. In five years I see myself either in an academic or museum setting—hopefully I will be close to completing my graduate degree! Ideally, I’d like to be conducting my own research projects in the Andes and complete some artifact preservation work on the side."</p>
                         </div>
                         <div class="story-author">
-                            <div class="author-avatar">SL</div>
+                            <div class="author-avatar"><img src="./images/Ashley-Vance-Headshot.webp" alt="" srcset=""></div>
                             <div class="author-info">
-                                <strong>Sarah L.</strong>
-                                <span>Parent of Class of 2024</span>
+                                <strong>Ashley Vance</strong>
+                                <span>September 2017 </span>
                             </div>
                         </div>
                     </div>
@@ -1031,52 +1002,120 @@
         </div>
     </section>
 
-    <!-- Footer -->
+   <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <svg viewBox="0 0 50 50" width="40" height="40">
-                            <circle cx="25" cy="25" r="22" fill="none" stroke="#ffffff" stroke-width="2" />
-                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
-                                fill="#ffffff" />
-                        </svg>
-                        <span>The Girls School</span>
+<img src="./images/logo.png" alt="The Girls School Logo" srcset="">
                     </a>
-                    <p>A Private School for Girls K-8 since 1952.</p>
+                    <p>Empowering girls to lead with confidence, think boldly, and shape the future since 2002.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
+                                    fill="none" stroke="currentColor" stroke-width="2" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="footer-column">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
                         <li><a href="about.html#mission">Mission & Vision</a></li>
+                        <li><a href="about.html#history">Our History</a></li>
                         <li><a href="about.html#leadership">Leadership</a></li>
                         <li><a href="about.html#careers">Careers</a></li>
+                        <li><a href="about.html#campus">Campus</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-column">
                     <h4>Programs</h4>
                     <ul>
-                        <li><a href="programs.html">Our Programs</a></li>
-                        <li><a href="programs.html#lower-school">Lower School (K-5)</a></li>
-                        <li><a href="programs.html#middle-school">Middle School (6-8)</a></li>
-                        <li><a href="programs.html#daily-life">Student Life</a></li>
+                        <li><a href="programs.html#lower-school">Lower School</a></li>
+                        <li><a href="programs.html#middle-school">Middle School</a></li>
+                        <li><a href="programs.html#curriculum">Curriculum</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                     </ul>
                 </div>
+
+                <div class="footer-column">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="admissions.html#apply">Apply Now</a></li>
+                        <li><a href="admissions.html#visit">Visit Campus</a></li>
+                        <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#open-house">Open House</a></li>
+                        <li><a href="admissions.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
                 <div class="footer-column footer-contact">
                     <h4>Contact</h4>
-                    <p>(555) 123-4567</p>
-                    <p>admissions@excellencegirls.edu</p>
-                    <p>123 Education Lane<br>Excellence, ST 12345</p>
+                    <address>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                            2007 McCall Road, Austin,<br> TX 78703, USA
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="currentColor" />
+                            </svg>
+                            (512) 478-7827
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                    fill="currentColor" />
+                            </svg>
+                            info@thegirlsschool.org
+                        </p>
+                    </address>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <p>&copy; 2026 The Girls School. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
                     <a href="#">Accessibility</a>
+                    <a href="#">Non-Discrimination</a>
                 </div>
             </div>
         </div>

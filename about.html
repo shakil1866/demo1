@@ -19,42 +19,25 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/about.css">
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
 </head>
 
 <body>
-    <!-- Animated Page Loader -->
+        <!-- Animated Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
-            <svg class="logo-svg" viewBox="0 0 100 100" width="120" height="120">
-                <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#2d5a7b" />
-                        <stop offset="50%" style="stop-color:#4a90a4" />
-                        <stop offset="100%" style="stop-color:#7ec8c8" />
-                    </linearGradient>
-                </defs>
-                <circle class="logo-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
-                    stroke-width="2" />
-                <polygon class="logo-star" points="50,15 58,40 85,40 63,55 72,80 50,65 28,80 37,55 15,40 42,40"
-                    fill="none" stroke="url(#logoGradient)" stroke-width="2" />
-                <text class="logo-text" x="50" y="95" text-anchor="middle" font-size="6"
-                    fill="url(#logoGradient)">EXCELLENCE</text>
-            </svg>
+            <img src="./images/logo.png" alt="The Girls School Logo" srcset="">
             <div class="loader-progress"></div>
-            <p class="loader-text">Empowering Future Leaders</p>
+            <p class="loader-text">The Girls School of Austin</p>
         </div>
     </div>
 
     <!-- Sticky Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <svg viewBox="0 0 50 50" width="40" height="40">
-                    <circle cx="25" cy="25" r="22" fill="none" stroke="#2d5a7b" stroke-width="2" />
-                    <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20" fill="#2d5a7b" />
-                </svg>
-                <span class="logo-text">The Girls School</span>
+            <a href="index.html" class="nav-logo" style="background-color: #7ec8c8; padding: 5px; border-radius: 5px;">
+                <img src="./images/logo.png" alt="" srcset="" style="width: 70px;  height: 50px;">
+
             </a>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -87,10 +70,10 @@
                             <div class="mega-menu-column">
                                 <h4>About Us</h4>
                                 <ul>
-                                    <li><a href="about.html#who-we-are">Who We Are</a></li>
                                     <li><a href="about.html#mission">Mission & Vision</a></li>
-                                    <li><a href="about.html#why-girls">Why a Girls' School</a></li>
+                                    <li><a href="about.html#values">Our Values</a></li>
                                     <li><a href="about.html#history">History & Timeline</a></li>
+                                    <li><a href="about.html#leadership">Leadership</a></li>
                                     <li><a href="about.html#diversity">Diversity, Equity & SEL</a></li>
                                 </ul>
                             </div>
@@ -98,17 +81,13 @@
                                 <h4>Community</h4>
                                 <ul>
                                     <li><a href="about.html#faculty">Faculty & Staff</a></li>
-                                    <li><a href="about.html#campus">Campus & Culture</a></li>
-                                    <li><a href="about.html#leadership">Leadership</a></li>
                                     <li><a href="about.html#governance">Governance</a></li>
+                                    <li><a href="about.html#accreditation">Accreditation</a></li>
                                     <li><a href="about.html#careers">Careers</a></li>
+                                    <li><a href="about.html#campus">Campus Overview</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Building confident, compassionate leaders since 1952"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -140,11 +119,7 @@
                                     <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Nurturing curiosity, building excellence"</p>
-                                </div>
-                            </div>
+                       
                         </div>
                     </div>
                 </li>
@@ -176,11 +151,7 @@
                                     <li><a href="admissions.html#resources">Parent Resources</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Begin your journey with The Girls School"</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </li>
@@ -213,14 +184,11 @@
                                     <li><a href="support.html#volunteer">Volunteer Opportunities</a></li>
                                     <li><a href="support.html#donate">Donate Now</a></li>
                                     <li><a href="support.html#alumni">Alumni Network</a></li>
-                                    <li><a href="support.html#corporate">Corporate Partners</a></li>
+                                
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="mega-menu-column mega-menu-visual">
-                                <div class="menu-visual">
-                                    <p>"Together, we empower the next generation"</p>
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </li>
@@ -239,70 +207,20 @@
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="about-hero" id="about-hero">
-        <!-- Hero Background with Gradient -->
-        <div class="hero-background">
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
-            <div class="hero-overlay"></div>
-        </div>
-
-        <!-- Decorative Elements -->
-        <div class="hero-decor hero-decor-1">
-            <svg viewBox="0 0 100 100" width="200" height="200">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
-                <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                <circle cx="50" cy="50" r="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-            </svg>
-        </div>
-        <div class="hero-decor hero-decor-2">
-            <svg viewBox="0 0 100 100" width="150" height="150">
-                <polygon points="50,10 61,35 88,35 66,50 75,75 50,60 25,75 34,50 12,35 39,35" fill="none"
-                    stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-            </svg>
-        </div>
-
+ 
+     <!-- Page Hero -->
+    <section class="page-hero" id="programs">
+        <div class="hero-background"
+            style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);"></div>
         <div class="container">
-            <div class="hero-content">
-                <!-- Section Tag -->
-                <!-- <span class="hero-tag" data-animate="fade-up" data-delay="100">
-                    <span class="tag-line"></span>
-                    Welcome to The Girls School
-                </span> -->
-
-                <!-- Main Title -->
-                <h1 class="hero-title" data-animate="fade-up" data-delay="200">
-                    <span class="title-line">Where Girls Empower</span>
-                  
-                </h1>
-
-                <!-- Intro Text -->
-                <p class="hero-intro" data-animate="fade-up" data-delay="400">
-                    For over seven decades, we have been dedicated to providing an exceptional educational experience
-                    that empowers young women to discover their unique potential, develop their intellectual curiosity,
-                    and cultivate the confidence to lead with integrity and compassion.
-                </p>
-
-                <!-- Animated Statistics -->
-             
-
-                <!-- CTA Buttons -->
-                <div class="hero-cta" data-animate="fade-up" data-delay="1000">
-                    <a href="admissions.html#apply" class="btn btn-primary btn-large">Apply Now</a>
-                    <a href="contact.html#visit" class="btn btn-outline-white btn-large">Schedule a Visit</a>
-                </div>
+            <div class="page-hero-content" data-animate="fade-up">
+                <span class="section-tag">Academic </span>
+                <h1 class="page-title">Our About</h1>
+                <p class="page-subtitle">The Girls' School of Austin (GSA) is a private, independent all-girls K–8 school located in the Tarrytown neighborhood of Austin, Texas</p>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" data-animate="fade-up" data-delay="1200">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span>Scroll to Discover</span>
         </div>
     </section>
+
 
     <!-- Who We Are Section -->
     <section class="who-we-are" id="who-we-are">
@@ -318,17 +236,10 @@
                             leaders in an ever-changing world.
                         </p>
                         <p>
-                            Founded in 1952 by Dr. Margaret Excellence, our school began with a simple yet powerful
-                            vision: to create a learning environment where girls could explore their interests freely,
-                            challenge themselves intellectually, and develop the self-confidence to pursue their dreams
-                            without limitation.
+                           GSA aims to develop confident, intellectually engaged young women within a supportive and inclusive community. The school fosters a "gender-free" environment, encouraging students to pursue all roles without traditional stereotypes. 
                         </p>
                         <p>
-                            Today, that vision has grown into a thriving community of approximately 700 students from
-                            diverse backgrounds, all united by a shared commitment to academic excellence, personal
-                            growth, and service to others. Our alumnae network of over 5,000 women spans the globe,
-                            making meaningful contributions in fields ranging from science and technology to arts,
-                            humanities, and public service.
+                       Key values include fostering curiosity and intellectual risk-taking, providing a robust liberal arts education, and promoting service.
                         </p>
                     </div>
                     <div class="identity-pillars" data-animate="fade-up" data-delay="200" data-stagger="150">
@@ -389,9 +300,7 @@
             <div class="section-header">
                 <span class="section-tag">Our Purpose</span>
                 <h2 class="section-title">Mission & Vision</h2>
-                <p class="section-subtitle">These statements guide every decision, interaction, and experience at The
-                    Girls School,
-                    ensuring we remain true to our core purpose of empowering young women.</p>
+                <p class="section-subtitle">The mission and vision of The Girls’ School of Austin (GSA) focus on creating a supportive environment where girls can develop the confidence and skills needed for a fulfilling life.</p>
             </div>
 
             <div class="mv-cards">
@@ -401,11 +310,7 @@
                         <span class="mv-label">Our Mission</span>
                         <h3>Empowering Girls to Lead, Innovate & Inspire</h3>
                         <p>
-                            To provide an exceptional educational experience that empowers girls to discover their
-                            unique
-                            potential, develop their intellectual curiosity, and cultivate the confidence to lead with
-                            integrity and compassion. We are committed to fostering a community where every student
-                            feels valued, supported, and challenged to reach her highest potential.
+                            The Girls’ School of Austin provides an academically challenging education for girls in a community that fosters creative learning and personal excellence. Our mission is to develop confident young women who lead intellectually vibrant and fulfilling lives.
                         </p>
                         <div class="mv-card-features">
                             <div class="feature">
@@ -433,13 +338,10 @@
                 <div class="mv-card-large" data-animate="fade-up" data-delay="300">
                   
                     <div class="mv-card-content">
-                        <span class="mv-label">Our Vision</span>
-                        <h3>A World Where Every Girl Can Pursue Her Dreams</h3>
+                        <span class="mv-label">Our Commitment</span>
+                        <h3>We Proud of Our Girls</h3>
                         <p>
-                            We envision a world where every girl has the opportunity to pursue her dreams without
-                            limitation, where our graduates are catalysts for positive change in their communities
-                            and beyond. Through our work, we aim to inspire a new generation of confident, compassionate
-                            women who will shape a brighter future for all.
+                           At The Girls’ School of Austin, we value the creativity, innovation, perspective-taking, and sense of connection that go hand-in-hand with being a community filled with people of diverse lived experiences and identities. We cultivate a space where every student has equitable access to opportunities and a deep sense of belonging; in this learning environment, every student is seen, heard, and valued. Through this commitment, the GSA is a thriving, dynamic place where confident young women become engaged citizens and change-makers who live intellectually vibrant and fulfilling lives.
                         </p>
                         <div class="vision-outlook">
                             <div class="outlook-item">
@@ -467,28 +369,12 @@
             <div class="section-header">
                 <span class="section-tag">The Girls' School Advantage</span>
                 <h2 class="section-title">Why Choose a Girls' School?</h2>
-                <p class="section-subtitle">Research consistently shows that girls' school graduates are more likely to
-                    succeed academically, professionally, and personally. Here's what sets The Girls School apart.</p>
+                <p class="section-subtitle">The Girls’ School of Austin is a remarkably gender-free environment.  Our students are routinely asked to take on all of the roles in their classrooms and on the campus at large. They are researchers, analysts, writers and scientists. They are athletes, artists, producers and even, comedians. They become comfortable as leaders and collaborators. Our girls graduate with a strong sense of accomplishment, both academic and personal, and a strong sense of who they are, which is empowering.</p>
             </div>
 
             <div class="why-content-grid">
                 <div class="why-main-content">
-                    <div class="story-block">
-                        <h3>The Research Speaks</h3>
-                        <p>
-                            Decades of research from institutions like the National Coalition of Girls' Schools confirms
-                            what we've known all along: girls thrive in single-gender learning environments. Our
-                            students
-                            consistently demonstrate higher academic achievement, greater self-confidence, and stronger
-                            leadership skills than their peers in coeducational settings.
-                        </p>
-                        <p>
-                            At The Girls School, every classroom discussion, every leadership opportunity, and every
-                            challenge is designed specifically with your daughter in mind. There are no distractions,
-                            no stereotypes limiting what she can achieve, and no social pressures holding her back from
-                            speaking up, taking risks, or pursuing her passions.
-                        </p>
-                    </div>
+                  
 
                     <div class="benefits-accordion">
                         <div class="accordion-item" data-animate="fade-up">
@@ -600,7 +486,7 @@
                         <h4>The Girls School Advantage</h4>
                         <div class="sidebar-stats">
                             <div class="sidebar-stat">
-                                <span class="stat-value">94%</span>
+                                <span class="stat-value">93%</span>
                                 <span class="stat-desc">of girls' school graduates say they were offered greater
                                     leadership opportunities</span>
                             </div>
@@ -639,7 +525,7 @@
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Our Journey</span>
-                <h2 class="section-title">A Legacy of Empowerment Since 1952</h2>
+                <h2 class="section-title">A Legacy of Empowerment Since 2002</h2>
                 <p class="section-subtitle">From our founding with 45 students to a thriving community of over 700,
                     discover the milestones that have shaped The Girls School into what it is today.</p>
             </div>
@@ -656,20 +542,17 @@
                         </div>
                     </div>
                     <div class="timeline-content enhanced">
-                        <span class="timeline-year">1952</span>
-                        <h3>The Beginning of a Vision</h3>
+                        <span class="timeline-year">1996-2001</span>
+                        <h3>The Beginning of a Early </h3>
                         <p>
-                            Dr. Margaret Excellence, a pioneering educator with a vision for girls' education,
-                            founded The Girls School with just 45 students and a small dedicated faculty.
-                            Located in a converted Victorian home, the school was founded on the belief that
-                            girls deserved an education tailored to their unique needs and potential.
+                          Founder Amy Lowrey and a dedicated group of parents envisioned a school where girls could find their voices without the pressure of gender stereotypes.
                         </p>
-                        <div class="timeline-archival">
+                        <!-- <div class="timeline-archival">
                             <div class="archival-note">
                                 <span class="archival-icon">📜</span>
                                 <span>First graduating class: 12 students</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -684,20 +567,17 @@
                         </div>
                     </div>
                     <div class="timeline-content enhanced">
-                        <span class="timeline-year">1965</span>
-                        <h3>First Major Expansion</h3>
+                        <span class="timeline-year">2002</span>
+                        <h3>The First Classroom</h3>
                         <p>
-                            The original campus was doubled in size with the addition of the Margaret Excellence
-                            Science Center and the Arts Wing. This expansion marked our commitment to providing
-                            comprehensive STEM education and artistic opportunities for girls at a time when such
-                            opportunities were often reserved for boys.
+                      The vision became reality in a small West Austin home with just five students in 5th and 6th grades. During this inaugural year, the faculty actually outnumbered the students.
                         </p>
-                        <div class="timeline-archival">
+                        <!-- <div class="timeline-archival">
                             <div class="archival-note">
                                 <span class="archival-icon">🏗️</span>
                                 <span>Campus footprint expanded to 15 acres</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -712,20 +592,17 @@
                         </div>
                     </div>
                     <div class="timeline-content enhanced">
-                        <span class="timeline-year">1985</span>
-                        <h3>Leadership Institute Launched</h3>
+                        <span class="timeline-year">2004</span>
+                        <h3>Securing a Foundation</h3>
                         <p>
-                            Recognizing the importance of empowering young women as leaders, we introduced our
-                            signature Leadership Development Program. This comprehensive initiative has since
-                            become a model for girls' schools worldwide,培养ing thousands of confident young
-                            women ready to make their mark on the world.
+                           The school purchased and moved to its permanent campus in Tarrytown (the former Dill Elementary site), providing the space needed for a full K–8 program.
                         </p>
-                        <div class="timeline-archival">
+                        <!-- <div class="timeline-archival">
                             <div class="archival-note">
                                 <span class="archival-icon">⭐</span>
                                 <span>First Student Government formed</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -740,47 +617,17 @@
                         </div>
                     </div>
                     <div class="timeline-content enhanced">
-                        <span class="timeline-year">2000</span>
-                        <h3>Technology Integration</h3>
+                        <span class="timeline-year">2026</span>
+                        <h3>Modern Community</h3>
                         <p>
-                            We became one of the first schools in the region to implement a 1:1 laptop program,
-                            integrating technology across all curriculum areas. This forward-thinking approach
-                            ensured our students were prepared for the digital age while using technology as a
-                            tool for creativity and innovation.
+                            Today, GSA is a thriving community of approximately 150 girls, intentionally keeping enrollment small to maintain a 7:1 student-to-faculty ratio and ensure every student is seen and heard.
                         </p>
-                        <div class="timeline-archival">
+                        <!-- <div class="timeline-archival">
                             <div class="archival-note">
                                 <span class="archival-icon">💻</span>
                                 <span>First all-school computer lab opened</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item enhanced" data-animate="fade-up" data-delay="500">
-                    <div class="timeline-marker-wrapper">
-                        <div class="timeline-marker">
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="timeline-content enhanced">
-                        <span class="timeline-year">2010</span>
-                        <h3>DEI Initiative & Scholarship Expansion</h3>
-                        <p>
-                            Launched comprehensive Diversity, Equity, and Inclusion programs, including the
-                            Excellence Scholarship Fund to ensure that a Girls School education is accessible
-                            to talented students from all economic backgrounds. Our commitment to diversity
-                            strengthens our entire community.
-                        </p>
-                        <div class="timeline-archival">
-                            <div class="archival-note">
-                                <span class="archival-icon">🌍</span>
-                                <span>International student program launched</span>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -795,21 +642,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="timeline-content enhanced">
-                        <span class="timeline-year">2020</span>
-                        <h3>Innovation Center Opens</h3>
-                        <p>
-                            Opened our state-of-the-art Innovation Center, featuring maker spaces, robotics labs,
-                            and collaborative learning environments. This facility has become a hub for creativity,
-                            entrepreneurship, and hands-on learning, preparing students for the careers of tomorrow.
-                        </p>
-                        <div class="timeline-archival">
-                            <div class="archival-note">
-                                <span class="archival-icon">🔬</span>
-                                <span>First regional robotics championship won</span>
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
 
                 <div class="timeline-item enhanced" data-animate="fade-up" data-delay="700">
@@ -1026,7 +859,7 @@
                                 stroke-width="2" />
                         </svg>
                     </div>
-                    <span class="faculty-number" data-count="75">0</span>
+                    <span class="faculty-number" data-count="18">0</span>
                     <span class="faculty-label">Full-time Faculty</span>
                     <p class="stat-detail">Dedicated to girls' education</p>
                 </div>
@@ -1038,7 +871,7 @@
                                 stroke="currentColor" stroke-width="2" />
                         </svg>
                     </div>
-                    <span class="faculty-number" data-count="68">0</span>
+                    <span class="faculty-number" data-count="70">0</span>
                     <span class="faculty-label">% Advanced Degrees</span>
                     <p class="stat-detail">Masters and doctoral degrees</p>
                 </div>
@@ -1050,7 +883,7 @@
                             <path d="M32 16v16l11 11" fill="none" stroke="currentColor" stroke-width="2" />
                         </svg>
                     </div>
-                    <span class="faculty-number" data-count="12">0</span>
+                    <span class="faculty-number" data-count="7">0</span>
                     <span class="faculty-label">Student-Teacher Ratio</span>
                     <p class="stat-detail">Personalized attention</p>
                 </div>
@@ -1063,7 +896,7 @@
                             <path d="M8 24h48M24 8v48" fill="none" stroke="currentColor" stroke-width="2" />
                         </svg>
                     </div>
-                    <span class="faculty-number" data-count="15">0</span>
+                    <span class="faculty-number" data-count="10">0</span>
                     <span class="faculty-label">Avg. Years Experience</span>
                     <p class="stat-detail">Expertise and dedication</p>
                 </div>
@@ -1166,14 +999,13 @@
                 <div class="leader-card enhanced">
                     <div class="leader-image">
                         <div class="leader-placeholder">
-                     <img src="./images/head.png" alt="" srcset="">
+                     <img src="./images/teacher1.png" alt="" srcset="">
                         </div>
                     </div>
                     <div class="leader-info">
-                        <h3>Dr. Sarah Mitchell</h3>
+                        <h3>Rebecca E. Yacono</h3>
                         <p class="leader-title">Head of School</p>
-                        <p class="leader-bio">Ed.D. from Columbia University, 25 years in girls' education, former
-                            national educator of the year.</p>
+                        <p class="leader-bio">Rebecca Yacono’s career in education began in 1983 at Porter Junior High, when she taught an eighth-grade classmate how to do vibrato on the viola. When her classmate subsequently beat her out for first chair viola in the All-City Orchestra auditions, Rebecca knew she had found her calling, not as a violist, but as an educator.</p>
                         <a href="#" class="leader-link">Read Full Bio →</a>
                     </div>
                 </div>
@@ -1181,15 +1013,14 @@
                 <div class="leader-card enhanced">
                     <div class="leader-image">
                         <div class="leader-placeholder">
-                                                 <img src="./images/head.png" alt="" srcset="">
+                                                 <img src="./images/teacher2.png" alt="" srcset="">
 
                         </div>
                     </div>
                     <div class="leader-info">
-                        <h3>Dr. Jennifer Rodriguez</h3>
-                        <p class="leader-title">Head of Lower School</p>
-                        <p class="leader-bio">M.A. in Elementary Education, specialist in early childhood development
-                            and play-based learning.</p>
+                        <h3>Chandler Yanke</h3>
+                        <p class="leader-title">Administrative Assistant</p>
+                        <p class="leader-bio">Comming soon!</p>
                         <a href="#" class="leader-link">Read Full Bio →</a>
                     </div>
                 </div>
@@ -1197,31 +1028,29 @@
                 <div class="leader-card enhanced">
                     <div class="leader-image">
                         <div class="leader-placeholder">
-                                          <img src="./images/head.png" alt="" srcset="">
+                                          <img src="./images/teacher3.png" alt="" srcset="">
 
                         </div>
                     </div>
                     <div class="leader-info">
-                        <h3>Michael Chen</h3>
-                        <p class="leader-title">Head of Middle School</p>
-                        <p class="leader-bio">M.Ed. from Harvard, expert in adolescent development and transitional
-                            education.</p>
-                        <a href="#" class="leader-link">Read Full Bio →</a>
-                    </div>
-                </div>
-
-                <div class="leader-card enhanced">
-                    <div class="leader-image">
-                        <div class="leader-placeholder">
-                                              <img src="./images/head.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="leader-info">
-                        <h3>Lisa Thompson</h3>
+                        <h3>Neely Michaelis</h3>
                         <p class="leader-title">Director of Admissions</p>
-                        <p class="leader-bio">B.A. in Psychology, 15 years guiding families through the admissions
-                            journey.</p>
+                        <p class="leader-bio">Neely Michaelis joined The Girls’ School of Austin as the Director of Admissions in 2020. She received her BA in Latin American Studies at the University of Texas at Austin and began</p>
+                        <a href="#" class="leader-link">Read Full Bio →</a>
+                    </div>
+                </div>
+
+                <div class="leader-card enhanced">
+                    <div class="leader-image">
+                        <div class="leader-placeholder">
+                                              <img src="./images/teacher4.png" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Anne Baker</h3>
+                        <p class="leader-title">Director of Instructional Technology, Co-Advisor 6th Grade</p>
+                        <p class="leader-bio">Anne Baker joined the Girls School of Austin this summer as the Director of Instructional Technology. After 12 years in Virginia as an elementary school teacher, middle school math teacher, and instructional technology</p>
                         <a href="#" class="leader-link">Read Full Bio →</a>
                     </div>
                 </div>
@@ -1268,17 +1097,7 @@
                         <span>NAIS Member</span>
                         <p>National Association of Independent Schools</p>
                     </div>
-                    <div class="accreditation-item">
-                        <div class="accreditation-badge">
-                            <svg viewBox="0 0 100 60" width="80" height="50">
-                                <rect fill="#7ec8c8" width="100" height="60" rx="8" />
-                                <text x="50" y="35" text-anchor="middle" fill="white" font-size="12"
-                                    font-weight="700">NGWA</text>
-                            </svg>
-                        </div>
-                        <span>NGWA Member</span>
-                        <p>National Girls' Schools Association</p>
-                    </div>
+               
                 </div>
             </div>
         </div>
@@ -1307,14 +1126,9 @@
             <div class="footer-content">
                 <div class="footer-column footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <svg viewBox="0 0 50 50" width="50" height="50">
-                            <circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="2" />
-                            <polygon points="25,8 30,20 42,20 33,28 36,40 25,33 14,40 17,28 8,20 20,20"
-                                fill="currentColor" />
-                        </svg>
-                        <span>The Girls School</span>
+<img src="./images/logo.png" alt="The Girls School Logo" srcset="">
                     </a>
-                    <p>Empowering girls to lead, innovate, and inspire since 1952.</p>
+                    <p>Empowering girls to lead with confidence, think boldly, and shape the future since 2002.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">
                             <svg viewBox="0 0 24 24" width="20" height="20">
@@ -1334,8 +1148,16 @@
                         <a href="#" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24" width="20" height="20">
                                 <path
-                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
                                     fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"
+                                    fill="none" stroke="currentColor" stroke-width="2" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
                             </svg>
                         </a>
                     </div>
@@ -1344,11 +1166,11 @@
                 <div class="footer-column">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html#who-we-are">Who We Are</a></li>
                         <li><a href="about.html#mission">Mission & Vision</a></li>
                         <li><a href="about.html#history">Our History</a></li>
                         <li><a href="about.html#leadership">Leadership</a></li>
                         <li><a href="about.html#careers">Careers</a></li>
+                        <li><a href="about.html#campus">Campus</a></li>
                     </ul>
                 </div>
 
@@ -1359,6 +1181,7 @@
                         <li><a href="programs.html#middle-school">Middle School</a></li>
                         <li><a href="programs.html#curriculum">Curriculum</a></li>
                         <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#graduate">Portrait of a Graduate</a></li>
                     </ul>
                 </div>
 
@@ -1368,6 +1191,7 @@
                         <li><a href="admissions.html#apply">Apply Now</a></li>
                         <li><a href="admissions.html#visit">Visit Campus</a></li>
                         <li><a href="admissions.html#tuition">Tuition & Aid</a></li>
+                        <li><a href="admissions.html#open-house">Open House</a></li>
                         <li><a href="admissions.html#faq">FAQs</a></li>
                     </ul>
                 </div>
@@ -1375,19 +1199,41 @@
                 <div class="footer-column footer-contact">
                     <h4>Contact</h4>
                     <address>
-                        <p>1234 Excellence Way<br>City, State 12345</p>
-                        <p>(555) 123-4567</p>
-                        <p>info@girls-school.edu</p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                                    fill="currentColor" />
+                            </svg>
+                            2007 McCall Road, Austin,<br> TX 78703, USA
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                    fill="currentColor" />
+                            </svg>
+                            (512) 478-7827
+                        </p>
+                        <p>
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                    fill="currentColor" />
+                            </svg>
+                            info@thegirlsschool.org
+                        </p>
                     </address>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 The Girls School. All rights reserved.</p>
+                <p>&copy; 2026 The Girls School. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
                     <a href="#">Accessibility</a>
+                    <a href="#">Non-Discrimination</a>
                 </div>
             </div>
         </div>

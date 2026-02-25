@@ -45,7 +45,7 @@
      * Initialize counter number animations
      */
     function initCounterAnimations() {
-        const counterElements = document.querySelectorAll('.stat-number[data-count]');
+        const counterElements = document.querySelectorAll('.stat-number[data-count], .faculty-number[data-count]');
 
         if (!counterElements.length) return;
 

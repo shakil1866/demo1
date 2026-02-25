@@ -161,7 +161,7 @@
     // Initialize counter animations
     function initCounterAnimations() {
         // Support multiple counter selectors
-        var counters = document.querySelectorAll('.stat-value[data-count], .stat-number[data-count], .impact-number[data-count], .vol-number[data-count], .n-stat-number[data-count]');
+        var counters = document.querySelectorAll('.stat-value[data-count], .stat-number[data-count], .impact-number[data-count], .vol-number[data-count], .n-stat-number[data-count], .faculty-number[data-count]');
 
         if (!counters.length) return;
 

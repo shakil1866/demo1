@@ -17,7 +17,7 @@
          * Initialize animated counters
          */
         initCounters: function () {
-            var counters = document.querySelectorAll('.stat-number[data-count]');
+            var counters = document.querySelectorAll('.stat-number[data-count], .faculty-number[data-count]');
 
             if (!counters.length) return;
 

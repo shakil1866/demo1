@@ -269,7 +269,7 @@ function initCarousel() {
  * Counter Animation
  */
 function initCounter() {
-    const counters = document.querySelectorAll('.stat-number[data-count]');
+    const counters = document.querySelectorAll('.stat-number[data-count], .faculty-number[data-count]');
 
     if (!counters.length) return;
 
